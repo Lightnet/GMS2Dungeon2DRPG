@@ -2,7 +2,7 @@
     "id": "22573e14-c289-4703-b161-b11a728c00d4",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_dungeon_stats",
+    "name": "obj_dungeon_status",
     "eventList": [
         {
             "id": "3271ccb0-9bd2-4a81-a555-6f89b8bf3472",
@@ -81,6 +81,6 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
-    "visible": true
+    "spriteId": "b1b5946b-f250-4b5e-868f-5badf2a8f687",
+    "visible": false
 }

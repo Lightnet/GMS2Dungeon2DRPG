@@ -9,7 +9,7 @@ if(bdisplay){
     draw_text(xx,yy-128-32,title);
     
     for(var i=0; i<= array_length_1d(option)-1;i++){
-        draw_set_colour(c_gray)
+        draw_set_colour(c_gray);
         var displaytext = option[i];
         if(i == menu_index){
             draw_set_colour(c_white);

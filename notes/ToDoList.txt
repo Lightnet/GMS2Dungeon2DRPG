@@ -1,1 +1,6 @@
 Project: GMS2Dungeon2DRPG
+
+Get the work thing done:
+ * build menu
+ * creautre variables
+ * summon and spawn

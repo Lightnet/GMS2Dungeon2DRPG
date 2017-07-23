@@ -130,7 +130,7 @@
             "Key": "22573e14-c289-4703-b161-b11a728c00d4",
             "Value": {
                 "id": "06e60516-cac9-48a4-8263-0d3b72ac1edb",
-                "resourcePath": "objects\\obj_dungeon_stats\\obj_dungeon_stats.yy",
+                "resourcePath": "objects\\obj_dungeon_status\\obj_dungeon_status.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -147,6 +147,14 @@
             "Value": {
                 "id": "9ae2a1ff-7128-4e21-acb6-0018ddb57ac1",
                 "resourcePath": "sprites\\spr_dungeon_core\\spr_dungeon_core.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "26f43233-3c71-4dfd-9f55-1eba724bec65",
+            "Value": {
+                "id": "4c2bb688-fd9f-409f-b436-8058cde63152",
+                "resourcePath": "sprites\\spr_dungeonmenu\\spr_dungeonmenu.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -255,6 +263,14 @@
             }
         },
         {
+            "Key": "41fe9fcd-888f-44d3-92c2-6cef32c8b17e",
+            "Value": {
+                "id": "c4c2812d-e81b-4df5-aee3-ec5e6f05734d",
+                "resourcePath": "sprites\\spr_generatedungeon\\spr_generatedungeon.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "43541e66-b6c6-4b3b-99e0-14ec2f690cb2",
             "Value": {
                 "id": "19168d46-de1f-483e-9998-3fea568de08d",
@@ -314,7 +330,7 @@
             "Key": "4f25a2ff-7907-4343-89fc-2d26efbe4d60",
             "Value": {
                 "id": "a8ee3476-b759-4a89-9cfb-9ac809a87d31",
-                "resourcePath": "rooms\\room0\\room0.yy",
+                "resourcePath": "rooms\\rm_dungeon_prototype\\rm_dungeon_prototype.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -331,6 +347,14 @@
             "Value": {
                 "id": "4837bc09-d209-4e63-9c38-ff14d8fc2af0",
                 "resourcePath": "views\\5507c9a2-9d01-49f7-beeb-a6071fd916f8.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "56f8b07e-f211-44fa-a912-56ebc8052fd5",
+            "Value": {
+                "id": "d8cf208c-9ff0-4ad4-9213-d087ff17af64",
+                "resourcePath": "views\\56f8b07e-f211-44fa-a912-56ebc8052fd5.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -391,6 +415,14 @@
             }
         },
         {
+            "Key": "7fb6e843-04ad-42bb-be71-32c96ad7a2ba",
+            "Value": {
+                "id": "1dd25ea6-fed2-40be-9a07-a31e75806517",
+                "resourcePath": "sprites\\spr_view\\spr_view.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "816dd5cc-1832-4291-bf6e-c7b055b6e446",
             "Value": {
                 "id": "56318851-e14c-4bc0-92e0-4c824bcdfc9d",
@@ -420,6 +452,14 @@
                 "id": "0d03a16f-4704-4a4b-9a59-ab4937b3c75c",
                 "resourcePath": "views\\844cd2b4-5aa6-4bdf-a4e9-7f65c21f332c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "86071ec3-c6fa-47cd-be3b-7ea75765ddb9",
+            "Value": {
+                "id": "94e40259-6573-4111-a6c7-47f876ad9978",
+                "resourcePath": "sprites\\spr_global\\spr_global.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -487,6 +527,14 @@
             }
         },
         {
+            "Key": "91c2f916-ffd2-440e-87bc-dce1b792444a",
+            "Value": {
+                "id": "f7067d5e-5107-4cff-958a-924a1d2bf1a8",
+                "resourcePath": "rooms\\rm_menu\\rm_menu.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "94bf7c51-1d60-47f2-8f83-b60a718a38df",
             "Value": {
                 "id": "9ffab8b8-13de-4d16-9ac3-2eae8318a450",
@@ -500,6 +548,14 @@
                 "id": "34b097b4-4ace-472f-b4ff-c98db5901ba6",
                 "resourcePath": "objects\\obj_command_units\\obj_command_units.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9ac69bdb-6ad5-430c-8d01-2384466f8339",
+            "Value": {
+                "id": "81ea0d90-0b11-48ea-96be-6621cd34b187",
+                "resourcePath": "sprites\\spr_build\\spr_build.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -583,6 +639,14 @@
             }
         },
         {
+            "Key": "b1b5946b-f250-4b5e-868f-5badf2a8f687",
+            "Value": {
+                "id": "826bc101-68d2-4b9b-b155-387c9f3bd84d",
+                "resourcePath": "sprites\\spr_dungeonstatus\\spr_dungeonstatus.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b1e0253a-0373-4039-b75a-92b9eebabb0c",
             "Value": {
                 "id": "00a220d8-c725-4cbe-a5a9-6f6ae469124d",
@@ -596,6 +660,14 @@
                 "id": "83d1ed83-7354-4d00-9c62-e2fde5e58c06",
                 "resourcePath": "views\\b5adc4ae-2b30-453b-848d-088e5c9cb26d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b837a240-2cba-4c41-96d5-19d514f99225",
+            "Value": {
+                "id": "d753f633-c964-41b7-9543-af4a6907a0f9",
+                "resourcePath": "sprites\\spr_dungeonbuild\\spr_dungeonbuild.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -735,10 +807,26 @@
             }
         },
         {
+            "Key": "e5b76480-8a02-4df4-9d96-6fb1493a9f25",
+            "Value": {
+                "id": "55639048-9ec0-4845-a9db-436fcd631d9f",
+                "resourcePath": "sprites\\spr_input\\spr_input.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e7269efa-8f8a-49b8-bef1-01575861e283",
             "Value": {
                 "id": "1e5bd6b0-53f3-4510-9906-4e7431c966aa",
                 "resourcePath": "objects\\obj_corpse_parent\\obj_corpse_parent.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ec17d67b-bbd3-4ac2-a84e-e4aec1de5c03",
+            "Value": {
+                "id": "aafe8eac-e30e-4b37-a73b-a7601935ad65",
+                "resourcePath": "objects\\obj_button\\obj_button.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -796,6 +884,14 @@
                 "id": "ba52ffdb-387c-40ad-80c6-e28b539f8c39",
                 "resourcePath": "objects\\obj_lifeform_parent\\obj_lifeform_parent.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f516d2ab-5de9-4171-8af3-5335c3e43148",
+            "Value": {
+                "id": "6e939ef6-952a-4fc6-a8d2-8c619c84967b",
+                "resourcePath": "rooms\\rm_dungeon\\rm_dungeon.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

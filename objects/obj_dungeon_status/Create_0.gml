@@ -1,7 +1,7 @@
-/// @description Insert description here
+/// @description Setup some base dungeon status
 // You can write your code in this editor
 /// initialize the player stats
-if(instance_number(obj_dungeon_stats) > 1) instance_destroy();
+if(instance_number(obj_dungeon_status) > 1) instance_destroy();
 hp = 5;
 maxhp = hp;
 stamina = 10;

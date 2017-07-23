@@ -8,7 +8,7 @@ if(global._ishud){
         var xx = display_get_gui_width()/2;
         var yy = display_get_gui_height()/2;
         var screenx = device_mouse_x_to_gui(0);
-        var screeny = device_mouse_y_to_gui(0); 
+        var screeny = device_mouse_y_to_gui(0);
         draw_text(xx,16,"BUILD MODE");
         var id_name = "none";
               

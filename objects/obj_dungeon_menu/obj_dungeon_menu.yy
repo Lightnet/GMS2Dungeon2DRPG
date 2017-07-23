@@ -45,7 +45,7 @@
             "m_owner": "c4907e3d-3d64-4c4c-91df-2a4ec9e64031"
         }
     ],
-    "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "maskSpriteId": "26f43233-3c71-4dfd-9f55-1eba724bec65",
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
@@ -61,6 +61,6 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
-    "visible": true
+    "spriteId": "26f43233-3c71-4dfd-9f55-1eba724bec65",
+    "visible": false
 }
