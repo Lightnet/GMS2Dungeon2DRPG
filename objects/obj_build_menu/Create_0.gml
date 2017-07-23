@@ -3,6 +3,8 @@
 /// initialize build
 isbuild = false;
 
+//array_create()
+
 isboundbox = false;
 issnap = true;
 sizegrid = 32;
