@@ -26,7 +26,15 @@ if (global._ishud)
                 pickid = -1;
                 //show_debug_message("delete object");
             }
-        }    
+        }
+		
+		for (var i = 0; i < array_length_1d(buttontabs); i++){
+			buttontabs[i].x = xx+(i*144)-256;
+			buttontabs[i].y = 64;
+			buttontabs[i].brender = true;
+		}
+		
+		/*
         //draw text h menu
         for (var i = 0; i < array_length_1d(buildmenu); i++)
         {
@@ -46,6 +54,7 @@ if (global._ishud)
                 }
             }
         }
+		*/
     
         //check if icon are bound here min and max
         //if(screeny > (4 + yy -64) and screeny < (5*(32+4) + yy -64)){//size and offsets and items
@@ -357,5 +366,9 @@ if (global._ishud)
         if(selectobject != -1){
             selectedobject = -1;
         }
+		
+		for (var i = 0; i < array_length_1d(buttontabs); i++){
+			buttontabs[i].brender = false;
+		}
     }
 }

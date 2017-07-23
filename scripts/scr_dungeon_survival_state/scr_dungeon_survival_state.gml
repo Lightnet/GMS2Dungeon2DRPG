@@ -7,6 +7,7 @@ if(obj_input.camtoggle_key){
             with(obj_view){
                 bcameracontrol = false;
                 bfollowplayer = true;
+				show_debug_message("player");
             }
         }
     }else{
@@ -15,6 +16,7 @@ if(obj_input.camtoggle_key){
             with(obj_view){
                 bcameracontrol = true;
                 bfollowplayer = false;
+				show_debug_message("camera");
             }
         }
     }

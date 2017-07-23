@@ -16,6 +16,7 @@ selectbox1_y = 0;
 selectbox2_x = 0;
 selectbox2_y = 0;
 
+
 view_wview[0] = 320 * zoom;
 view_hview[0] = 240 * zoom;
 

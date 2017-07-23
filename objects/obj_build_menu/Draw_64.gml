@@ -14,10 +14,10 @@ if(global._ishud){
               
         draw_text(xx,32,"Select: "+id_name);
         draw_set_halign(fa_left);
-        for (var i = 0; i < array_length_1d(buildmenu); i++)
-        {
-            draw_text(xx+(i*64)-92-32, 64, string( buildmenu[i] ));
-        }
+        //for (var i = 0; i < array_length_1d(buildmenu); i++)
+        //{
+            //draw_text(xx+(i*128)-128-128, 64, string( buildmenu[i] ));
+        //}
         //draw text h menu
     
         //check if icon are bound here min and max
