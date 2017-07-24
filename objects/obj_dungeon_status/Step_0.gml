@@ -44,5 +44,10 @@ if(obj_input.dungeonmenu_key){
         }
     }
 }
+
+if(obj_input.f2_key){
+    scr_getcreatures();
+}
+
 //make sure game dungeon game mode is set to it.
 script_execute(dungeon_mode);

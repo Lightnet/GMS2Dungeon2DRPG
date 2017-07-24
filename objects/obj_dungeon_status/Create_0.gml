@@ -2,14 +2,23 @@
 // You can write your code in this editor
 /// initialize the player stats
 if(instance_number(obj_dungeon_status) > 1) instance_destroy();
-hp = 5;
+
+name = "unknown";
+race = "unknown";
+born_gender = "unknown";
+age = 0;
+hp = 100;
 maxhp = hp;
-stamina = 10;
+stamina = 100;
 maxstamina = stamina;
 expr = 0;
 maxexpr = 3;
 level = 1;
-attack = 1;
+attack = 10;
+defense = 100;
+magicattack = 10;
+magicdefense = 100;
+threatlevel = "E";
 
 //dungeon stats
 dp = 1000;
@@ -18,8 +27,8 @@ maxdp = 1000;
 global.dm_creatures = ds_map_create();
 global.dm_inventory = ds_map_create();
 global.dm_abilities = ds_map_create();
-global.dm_skills = ds_map_create();
-global.dm_knownledge = ds_map_create(); 
+global.dm_skills = noone;
+global.dm_knowledges = ds_map_create(); 
 global.dm_map = ds_map_create();
 
 
@@ -55,3 +64,10 @@ dung_floor_size[0] = 100;
 dung_floor_size[1] = 100;
 
 //Stores the map of the current floor.
+
+
+//setup tests!
+scr_init_skills();
+scr_init_items();
+scr_init_research();
+scr_init_creatures();

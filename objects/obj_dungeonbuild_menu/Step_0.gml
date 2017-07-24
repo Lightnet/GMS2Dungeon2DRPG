@@ -29,7 +29,7 @@ if (global._ishud)
         }
 		
 		for (var i = 0; i < array_length_1d(buttontabs); i++){
-			buttontabs[i].x = xx+(i*144)-256;
+			buttontabs[i].x = xx+(i*144)-(144*5/2);
 			buttontabs[i].y = 64;
 			buttontabs[i].brender = true;
 		}

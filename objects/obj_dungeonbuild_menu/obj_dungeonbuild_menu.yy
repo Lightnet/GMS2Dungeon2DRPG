@@ -2,7 +2,7 @@
     "id": "00decd8b-5cb2-4e28-b9d9-dfb9f427066e",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_build_menu",
+    "name": "obj_dungeonbuild_menu",
     "eventList": [
         {
             "id": "3d436ad0-f6e1-4f73-914a-fbb21b33ba57",

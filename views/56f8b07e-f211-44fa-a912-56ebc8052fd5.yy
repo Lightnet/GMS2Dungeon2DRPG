@@ -8,7 +8,7 @@
         "d9cb7208-d1d9-40cd-b769-0cbf6abcfa6e"
     ],
     "filterType": "GMObject",
-    "folderName": "menus",
+    "folderName": "UI",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

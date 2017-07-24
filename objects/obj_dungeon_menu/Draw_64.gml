@@ -7,7 +7,7 @@ if(bdisplay){
     var yy = display_get_gui_height()/2;
     draw_set_halign(fa_center);
     draw_text(xx,yy-128-32,title);
-    
+    /*
     for(var i=0; i<= array_length_1d(option)-1;i++){
         draw_set_colour(c_gray);
         var displaytext = option[i];
@@ -19,9 +19,9 @@ if(bdisplay){
     }
     draw_set_colour(c_white);
     draw_set_halign(fa_left);
+	*/
     
     script_execute(currentmenu);
-	
 }
 
 if(obj_input.help_key){
