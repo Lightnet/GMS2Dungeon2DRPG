@@ -17,6 +17,10 @@ if(bfollowplayer){
         //y += (obj_player.y - y) * 0.1;
 		camera_set_view_target(view_camera[0],obj_view);
     }else{
+		//follow default view object
+		var view_w = camera_get_view_width(view_camera[0]);
+		var view_h = camera_get_view_height(view_camera[0]);
+		camera_set_view_border(view_camera[0], view_w/2, view_h/2);
 		camera_set_view_target(view_camera[0],obj_view);
 	}
 	
@@ -46,16 +50,7 @@ if(bfollowplayer){
 
 if(bcameracontrol){
 	camera_set_view_target(view_camera[0],noone);
-    ///zoom
-    //if(mouse_wheel_up()){
-        //zoom = max(0.1,zoom - 0.10);
-		//show_debug_message("wheel?")
-    //}
-    //if (mouse_wheel_down()){
-        //zoom +=0.10;
-		//show_debug_message("wheel?")
-    //}
-	
+    ///zoom	
 	//Move the zoom level based on mouse scrolling. Clamp the value so stuff doesn't get too silly.
 	zoom_level = clamp(zoom_level + (((mouse_wheel_down() - mouse_wheel_up())) * 0.1), 0.1, 5);
 	
