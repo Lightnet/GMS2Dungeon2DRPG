@@ -41,7 +41,7 @@ draw_set_colour(c_white);
 dungeon_ui = scr_dungeon_survival_hud;
 dungeon_mode = scr_dungeon_survival_state;
 
-toggle_camera = false;
+toggle_camera = true;
 
 //wave control variables
 creature_count = 0;

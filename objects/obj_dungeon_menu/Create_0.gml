@@ -21,8 +21,10 @@ status_index = 0;
 menu_index = 0;
 bdisplay = false;
 
+
 currentmenu = scr_status_menu;
 current_state = scr_dungeon_menu_state;
+
 
 helpkeys[0] = "Dungeon Keys";
 helpkeys[1] = "Tab Key | Camera Toggle";

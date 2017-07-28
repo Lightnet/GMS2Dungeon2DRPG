@@ -17,7 +17,7 @@ swap_key = keyboard_check_pressed(ord("Z"));
 spell_key = keyboard_check_pressed(ord("V"));
 //pause menu
 pause_key = keyboard_check_pressed(vk_escape);
-dungeonmenu_key = keyboard_check_pressed(ord("A"));
+dungeonmenu_key = keyboard_check_pressed(ord("Q"));
 camtoggle_key = keyboard_check_pressed(vk_tab);
 buildmenu_key = keyboard_check_pressed(ord("B"));
 //mouse keys
