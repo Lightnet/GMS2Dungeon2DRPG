@@ -6,7 +6,8 @@
     "children": [
         "268732de-6b8b-4f70-9608-f0ff27b66170",
         "71eef30f-3bd4-4946-b272-3be84526e953",
-        "0f1ad9dc-51e4-4f1a-a4af-130650b4e760"
+        "0f1ad9dc-51e4-4f1a-a4af-130650b4e760",
+        "e2bcce7b-fb87-42b7-9e65-99402669a894"
     ],
     "filterType": "GMSprite",
     "folderName": "dungeons",

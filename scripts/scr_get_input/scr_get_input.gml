@@ -2,6 +2,7 @@
 
 help_key = keyboard_check(vk_f1);
 f2_key = keyboard_check(vk_f2);
+f3_key = keyboard_check(vk_f3);
 
 right_key = keyboard_check(vk_right);
 left_key = keyboard_check(vk_left);

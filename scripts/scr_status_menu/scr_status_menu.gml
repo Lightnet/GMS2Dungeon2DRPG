@@ -14,10 +14,12 @@ if(instance_exists(obj_dungeon_status)){
    status[5] = "Rank:" + obj_dungeon_status.threatlevel;
 }
 
-for(var i=0; i<= array_length_1d(status)-1;i++){
-    draw_set_colour(c_gray)
-    if(i == status_index){
-        draw_set_colour(c_white);
-    }
-    draw_text((xx)-256,yy-64+(i*32),status[i]+"");
+draw_set_halign(fa_left);
+for(var i=0; i < array_length_1d(status);i++){
+	//show_debug_message(array_length_1d(i));
+    //draw_set_colour(c_gray);
+    //if(i == status_index){
+        //draw_set_colour(c_white);
+    //}
+    draw_text((xx)-256,yy-64+(i*32),status[i]);
 }

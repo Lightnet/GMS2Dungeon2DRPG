@@ -17,6 +17,21 @@
 #macro WALL 0;
 #macro FLOOR 1;
 #macro VOID 2;
+#macro TRAP 3;
+#macro CREATURE 4;
+#macro ADVENTURER 5;
+
+
+#macro THIEF 0;
+#macro WARRIOR 1;
+#macro MAGE 2;
+#macro CLERIC 3;
+#macro ARCHER 4;
+
+global.Adventurers = 0;
+global.Creatures = 0;
+
+
 
 /// default var only
 

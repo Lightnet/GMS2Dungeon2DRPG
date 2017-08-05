@@ -1,6 +1,7 @@
 /// @description control depth
 // You can write your code in this editor
 /// control depth
+/*
 if(followTarget.followingPath)
 {
     var dir = point_direction(x,y,followTarget.x,followTarget.y);
@@ -14,6 +15,7 @@ if(followTarget.followingPath)
     phy_position_x += hspd
     phy_position_y += vspd;
 }
+*/
 depth = -y;
 hunger = max(0, hunger - hungerDrop);
 if ( hunger <= 0) {

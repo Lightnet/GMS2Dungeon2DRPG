@@ -63,10 +63,10 @@ baseFaction = factions.neutral;
 mineStrength = 10;
 
 //element
-inst = instance_position(x, y, obj_place);
-if inst != noone {
-    element = inst.element;
-    image_blend = ds_map_find_value(global.element_colour, element);
-} else {
+//inst = instance_position(x, y, obj_place);
+//if inst != noone {
+    //element = inst.element;
+    //image_blend = ds_map_find_value(global.element_colour, element);
+//} else {
     element = elements.none;
-}
+//}

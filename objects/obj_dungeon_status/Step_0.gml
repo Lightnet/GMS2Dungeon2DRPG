@@ -46,7 +46,13 @@ if(obj_input.dungeonmenu_key){
 }
 
 if(obj_input.f2_key){
-    scr_getcreatures();
+    //scr_getcreatures();
+	if(alarm[0] <= 0){
+		//scr_roomobjects();
+		scr_getcreatures();
+		scr_getadventurercount();
+		alarm[0] = room_speed / 6;
+	}
 }
 
 //make sure game dungeon game mode is set to it.
