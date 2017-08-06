@@ -88,13 +88,13 @@ items[0,3] = obj_spike;
 
 creatures[0,0] = "Slime"
 creatures[0,1] = spr_slime
-creatures[0,2] = obj_monster_slime
-creatures[0,3] = obj_monster_slime
+creatures[0,2] = obj_slime
+creatures[0,3] = obj_slime
 
 creatures[1,0] = "Slime Spawner"
 creatures[1,1] = spr_spawner
 creatures[1,2] = obj_spawner
-creatures[1,3] = obj_monster_slime
+creatures[1,3] = obj_slime
 
 slotlist = tileblock;
 
