@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "0f65be1c-8ec4-44f5-9fc7-58808b12dc0c",
+            "Value": {
+                "id": "eb0a3c5b-f634-43c0-aca4-6387c87bdcf3",
+                "resourcePath": "sprites\\spr_projectile\\spr_projectile.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "105e2005-2303-46c9-8a95-562799a3b919",
             "Value": {
                 "id": "52555244-e15e-49a2-acc2-b5c24606c0e6",
@@ -276,6 +284,14 @@
                 "id": "06e60516-cac9-48a4-8263-0d3b72ac1edb",
                 "resourcePath": "objects\\obj_dungeon_status\\obj_dungeon_status.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "228e0466-0a72-4fcd-9a53-26f4bc56d09f",
+            "Value": {
+                "id": "be76a279-f280-4c86-9185-c23e9cdefa97",
+                "resourcePath": "views\\228e0466-0a72-4fcd-9a53-26f4bc56d09f.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -395,6 +411,14 @@
             "Value": {
                 "id": "9d3b1ea8-f4e3-4e82-88dd-5032d2d72364",
                 "resourcePath": "objects\\obj_adventurer\\obj_adventurer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "35fda160-e3f5-4700-9a00-2371d355565a",
+            "Value": {
+                "id": "fcc1121e-87d5-4706-83ca-b1d45d569b3a",
+                "resourcePath": "objects\\obj_projectile\\obj_projectile.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -687,6 +711,14 @@
             }
         },
         {
+            "Key": "569f2d6e-a95c-4b53-b226-49252df1b923",
+            "Value": {
+                "id": "40e87078-50c0-4bd7-8666-3568230ae433",
+                "resourcePath": "views\\569f2d6e-a95c-4b53-b226-49252df1b923.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "56f8b07e-f211-44fa-a912-56ebc8052fd5",
             "Value": {
                 "id": "d8cf208c-9ff0-4ad4-9213-d087ff17af64",
@@ -868,6 +900,14 @@
                 "id": "2a07e662-6e82-45f0-98b5-030f309ffad0",
                 "resourcePath": "scripts\\scr_getobjectcount\\scr_getobjectcount.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "79a1f33e-e081-41e0-b63f-8a8f6738a5f3",
+            "Value": {
+                "id": "024643ed-8c82-43b1-b03d-6981ca269108",
+                "resourcePath": "objects\\obj_weapon_animation\\obj_weapon_animation.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1327,6 +1367,14 @@
             }
         },
         {
+            "Key": "b2ea3c0a-87a4-4ff7-8306-9e26dbae1fea",
+            "Value": {
+                "id": "0701e0e6-0b9e-4d7b-bcf2-410203463084",
+                "resourcePath": "objects\\obj_dialog\\obj_dialog.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b5adc4ae-2b30-453b-848d-088e5c9cb26d",
             "Value": {
                 "id": "83d1ed83-7354-4d00-9c62-e2fde5e58c06",
@@ -1770,7 +1818,7 @@
             "Key": "f56c8f10-d7ec-4ed9-8552-4e44363f20c5",
             "Value": {
                 "id": "42dd7157-7119-47a8-b7a5-aa236ea40fb0",
-                "resourcePath": "scripts\\scr_getcreatures\\scr_getcreatures.yy",
+                "resourcePath": "scripts\\scr_getcreaturescount\\scr_getcreaturescount.yy",
                 "resourceType": "GMScript"
             }
         },

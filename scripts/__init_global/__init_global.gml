@@ -4,13 +4,18 @@
 #macro RETURN 0;
 #macro NEW_ROOM 1;
 #macro LOAD 2;
+
 #macro MOVE 0;
 #macro ATTACK 1;
 #macro IDLE 2;
+#macro PATROL 3;
+#macro GUARD 4;
+
 #macro RIGHT 0;
 #macro UP 1;
 #macro LEFT 2;
 #macro DOWN 3;
+
 #macro CONTROL_DUNGEON 0;
 #macro CONTROL_PLAYER 1;
 #macro CONTROL_CUTSCENE 2;
@@ -21,7 +26,6 @@
 #macro CREATURE 4;
 #macro ADVENTURER 5;
 
-
 #macro THIEF 0;
 #macro WARRIOR 1;
 #macro MAGE 2;
@@ -29,7 +33,13 @@
 #macro ARCHER 4;
 
 global.Adventurers = 0;
+global.Adventurer_Current = 0;
+global.Adventurer_Counts = 0;
+
+
 global.Creatures = 0;
+global.Creature_Current = 0;
+global.Creature_Counts = 0;
 
 
 

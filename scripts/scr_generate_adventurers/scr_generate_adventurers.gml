@@ -5,11 +5,10 @@ adventurers[3] = obj_cleric;
 adventurers[4] = obj_archer;
 
 
-
 if(instance_exists(obj_dungeon_exit)){
 	var xx = obj_dungeon_exit.x;
 	var yy = obj_dungeon_exit.y;
 	
 	var obj_tmp = instance_create_layer(xx,yy,"adventures",obj_thief);
-	
+	scr_getadventurercount();	
 }

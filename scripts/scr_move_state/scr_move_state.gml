@@ -19,7 +19,7 @@ if (obj_input.dash_key){
         //talk to it
         with(speaker){
             if(!instance_exists(dialog)){
-                dialog = instance_create(x+xoffset,y+yoffset,obj_dialog);
+                dialog = instance_create_layer(x+xoffset,y+yoffset,"effects",obj_dialog);
                 dialog.text = text;
             }else{
                 dialog.text_page++;
@@ -46,7 +46,7 @@ if(obj_input.attack_key){
 }
 
 if(obj_input.spell_key){
-    var p = instance_create(x,y,obj_projectile);
+    var p = instance_create_layer(x,y,"effects",obj_projectile);
     var xforce = lengthdir_x(20,face*90);
     var yforce = lengthdir_y(20,face*90);    
     p.creator = id;

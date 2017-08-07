@@ -49,8 +49,16 @@ if(obj_input.f2_key){
     //scr_getcreatures();
 	if(alarm[0] <= 0){
 		//scr_roomobjects();
-		scr_getcreatures();
-		scr_getadventurercount();
+		//scr_getcreaturescount();
+		//scr_getadventurercount();
+		if(instance_exists(obj_admin)){
+			if(obj_admin.bshow){
+				obj_admin.bshow = false;
+			}else{
+				obj_admin.bshow = true;
+			}
+		}
+		
 		alarm[0] = room_speed / 6;
 	}
 }

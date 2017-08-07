@@ -19,3 +19,6 @@
 //}
 //room_persistent = false;
 //room_start_action = NEW_ROOM;
+
+scr_getcreaturescount();
+scr_getadventurercount();

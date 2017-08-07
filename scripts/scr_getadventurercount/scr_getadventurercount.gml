@@ -11,4 +11,5 @@ for(var i = 0; i < array_length_1d(adventurers); i++){
 	counts += obj_count;
 }
 
-show_debug_message("adventurers: "+string(counts));
+show_debug_message("Adventurers: "+string(counts));
+global.Adventurer_Counts = counts;
