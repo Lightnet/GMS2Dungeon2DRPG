@@ -4,7 +4,36 @@
     "mvc": "1.0",
     "name": "obj_level_generate_dungeon",
     "eventList": [
-        
+        {
+            "id": "d2d30133-c039-438c-b823-a9c81c701dfc",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "f5673dd0-0523-42f5-bb8e-8f2fb728be4e"
+        },
+        {
+            "id": "27652614-3191-49ac-87a3-50f16aeef2eb",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "f5673dd0-0523-42f5-bb8e-8f2fb728be4e"
+        },
+        {
+            "id": "c90ac71f-27fe-4dd1-8e40-53399801d84c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 2,
+            "eventtype": 7,
+            "m_owner": "f5673dd0-0523-42f5-bb8e-8f2fb728be4e"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "parentObjectId": "00000000-0000-0000-0000-000000000000",

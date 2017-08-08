@@ -10,6 +10,12 @@
 //    stamina++;
 //}
 
+if(b_dp_regan){
+	if(alarm[11] <= 0){
+		alarm[11] = dp_regan_time;
+	}
+}
+
 //dungeon reset
 if(reset_wave){    
     hp = 5;

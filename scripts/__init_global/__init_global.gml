@@ -52,12 +52,15 @@ global.Dungeon_RNGTime = 0;
 global.Dungeon_Upgrading = false; //for kick party for dungeon upgrading
 
 
+global.level_generate = false;
+
+
 
 /// default var only
 
 global._ismenu = true;
 global._ishud = true;
-global.level_generate = true; //create level default  boolean
+//global.level_generate = true; //create level default  boolean
 global._display_dungeon = true;
 global._display_player = false;
 global.pathingWidth = room_width div CELLWIDTH;
