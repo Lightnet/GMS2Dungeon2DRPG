@@ -34,12 +34,22 @@
 
 global.Adventurers = 0;
 global.Adventurer_Current = 0;
-global.Adventurer_Counts = 0;
+global.Adventurer_Counts = 0; // number of current adventure in the dungeon
 
 
 global.Creatures = 0;
 global.Creature_Current = 0;
 global.Creature_Counts = 0;
+
+global.Dungeon_Threat_Level = 0;
+global.Dungeon_Helper = noone;
+global.Dungeon_Map = noone;
+global.Dungeon_Path = noone;
+global.Dungeon_Time = 0;
+global.Dungeon_RaidTime = 0; //Time when party or adventure explore dungeon
+global.Dungeon_RNGTime = 0;
+
+global.Dungeon_Upgrading = false; //for kick party for dungeon upgrading
 
 
 

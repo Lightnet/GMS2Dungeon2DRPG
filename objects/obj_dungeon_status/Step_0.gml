@@ -58,7 +58,6 @@ if(obj_input.f2_key){
 				obj_admin.bshow = true;
 			}
 		}
-		
 		alarm[0] = room_speed / 6;
 	}
 }
