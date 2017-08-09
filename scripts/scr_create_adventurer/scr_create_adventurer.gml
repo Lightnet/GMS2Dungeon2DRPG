@@ -52,7 +52,18 @@ if(instance_exists(obj_dungeon_exit)){
 	
 	//check if object is not noone then create
 	if(obj_class != noone){
-		var ot_adventure = instance_create_layer(xx,yy,"adventures",obj_class);
+		var ot_adventure = instance_create_layer(xx,yy+32,"adventures",obj_class);
+		with(ot_adventure){
+			//path_add_point(path, obj_dungeon_core.x, obj_dungeon_core.y, 5);
+			//path_start(path, 5, path_action_stop, false);		
+			//ot_adventure.path
+			//obj_level_generate_dungeon
+			//obj_level_generate_dungeon.grid_path
+			mp_grid_path(obj_level_generate_dungeon.grid_path,path,x,y,obj_dungeon_core.x,obj_dungeon_core.y,true);
+			//path_start(path, 5, path_action_stop, false);
+			bpath_start = true;
+			//show_debug_message("x"+string(x));
+		}
 	}
 	
 	//update adventure count

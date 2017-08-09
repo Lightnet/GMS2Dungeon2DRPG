@@ -31,7 +31,9 @@ follow_distance = 4;
 followTarget = instance_create_layer(x,y,"targets",obj_follow_target);
 followTarget.owner = self;
 point = 0;
-path_done = 0;
+path_done = true;
+bpath_start = false;
+path = path_add();
 
 //paramse
 name = "testname";

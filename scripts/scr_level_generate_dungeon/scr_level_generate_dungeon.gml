@@ -25,6 +25,8 @@ if(global.level_generate){
     
     //create pathfinding grid
     grid_path = mp_grid_create(0,0,width,height,_CELLWIDTH,_CELLHEIGHT);
+	
+	global.grid_path = grid_path;
     
     //create object grid instance object
     grid_tileobjects = ds_grid_create(width, height);
@@ -101,6 +103,8 @@ if(global.level_generate){
     
     //create pathfinding grid
     grid_path = mp_grid_create(0,0,width,height,_CELLWIDTH,_CELLHEIGHT);
+	
+	global.grid_path = grid_path;
     
     //create object grid instance object
     //grid_tileobjects = ds_grid_create(width, height);

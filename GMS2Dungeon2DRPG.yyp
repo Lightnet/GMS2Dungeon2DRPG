@@ -447,6 +447,14 @@
             }
         },
         {
+            "Key": "31b7fb0d-b581-4795-a38c-86ea8488a06f",
+            "Value": {
+                "id": "7f485079-f88b-47e8-a590-ff3aa633a545",
+                "resourcePath": "scripts\\scr_move_to_dungeoncore\\scr_move_to_dungeoncore.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3237c488-49ee-4fa2-aa13-510266ca2c68",
             "Value": {
                 "id": "9d3b1ea8-f4e3-4e82-88dd-5032d2d72364",
@@ -2138,6 +2146,7 @@
         "be79d11f-719b-49d3-98a3-c885ef4754b1",
         "d39cc7ab-127a-4ab2-8b64-4dbe0c128636",
         "c3f2be6e-6a4f-45cb-bccb-57b8161fcb7b",
+        "31b7fb0d-b581-4795-a38c-86ea8488a06f",
         "39155ac1-795d-4be8-8979-f3c36f645de2",
         "1c165c36-ba3a-4d6f-8bd0-28b7794911e9",
         "caa55756-1116-4ce6-a919-1dc8e5da790a",

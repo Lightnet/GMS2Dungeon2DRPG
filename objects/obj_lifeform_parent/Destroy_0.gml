@@ -6,3 +6,6 @@ with(followTarget)
 {
     instance_destroy(); 
 }
+if(path_exists(path)){
+	path_delete(path);
+}
