@@ -799,6 +799,14 @@
             }
         },
         {
+            "Key": "56f65aa3-3c46-4067-87a9-9887eb359224",
+            "Value": {
+                "id": "91c4377d-5fdc-4b5e-bb6a-b984dc6ebf09",
+                "resourcePath": "scripts\\scr_move_to_dugeonexit\\scr_move_to_dugeonexit.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "56f8b07e-f211-44fa-a912-56ebc8052fd5",
             "Value": {
                 "id": "d8cf208c-9ff0-4ad4-9213-d087ff17af64",
@@ -2100,6 +2108,7 @@
         "14574c08-8c7b-40cf-b070-4e3af1a5535e",
         "4d65bd76-c7c3-4198-8453-aab8229e1540",
         "fa9424a7-52a3-4898-af0c-4ee379171d9d",
+        "56f65aa3-3c46-4067-87a9-9887eb359224",
         "39155ac1-795d-4be8-8979-f3c36f645de2",
         "1c165c36-ba3a-4d6f-8bd0-28b7794911e9",
         "caa55756-1116-4ce6-a919-1dc8e5da790a",

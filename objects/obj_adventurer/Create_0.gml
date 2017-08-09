@@ -3,4 +3,9 @@
 event_inherited();
 objtype = ADVENTURER;
 job = "None";
-alarm[0] = room_speed;
+
+breturnhome = false;
+btodungeoncore = true;
+
+
+//alarm[0] = room_speed;
