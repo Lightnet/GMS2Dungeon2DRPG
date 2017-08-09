@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 ///initialize the lifeform
-phy_fixed_rotation = true;
+//phy_fixed_rotation = true;
 hp = 3;
 maxhp = 3;
 monsterTier = 1;

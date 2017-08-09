@@ -50,11 +50,7 @@ global.Dungeon_RaidTime = 0; //Time when party or adventure explore dungeon
 global.Dungeon_RNGTime = 0;
 
 global.Dungeon_Upgrading = false; //for kick party for dungeon upgrading
-
-
 global.level_generate = false;
-
-
 
 /// default var only
 
