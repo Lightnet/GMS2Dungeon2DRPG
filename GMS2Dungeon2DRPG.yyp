@@ -303,6 +303,14 @@
             }
         },
         {
+            "Key": "20677379-5ed7-4cc3-a9c9-da997721afa1",
+            "Value": {
+                "id": "ae8b73f6-4d91-40c7-9a49-ec94fd96c41c",
+                "resourcePath": "views\\20677379-5ed7-4cc3-a9c9-da997721afa1.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "2095b6f7-6444-41b1-ba7c-c9e733a7b856",
             "Value": {
                 "id": "38b27366-da91-4b85-90e6-7b5530a3c5c3",
@@ -1423,6 +1431,14 @@
             }
         },
         {
+            "Key": "aa12c166-da4a-41e5-8736-d2b67ae14286",
+            "Value": {
+                "id": "8f42d65f-b157-496b-ae24-edfa734f91d6",
+                "resourcePath": "views\\aa12c166-da4a-41e5-8736-d2b67ae14286.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "afaffcd5-9c15-4c6a-82b3-e19086818255",
             "Value": {
                 "id": "81b097f4-40d3-4bfe-a4ef-08d022cc8379",
@@ -1444,6 +1460,14 @@
                 "id": "c39fe536-a999-46e7-8763-e1d8be933f19",
                 "resourcePath": "sprites\\spr_up\\spr_up.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b1932bc2-be90-4da7-a431-0b72dfc9d9c4",
+            "Value": {
+                "id": "25418b45-c4e9-4522-a720-707d9ace79ae",
+                "resourcePath": "scripts\\scr_dungeon_update_creature_list\\scr_dungeon_update_creature_list.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1516,6 +1540,14 @@
                 "id": "8e9bf43d-5c10-4e36-ac69-a069913391c2",
                 "resourcePath": "objects\\obj_selected_monster\\obj_selected_monster.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "bd54cc11-43f7-4579-9ba7-c79a3e3c90c2",
+            "Value": {
+                "id": "d5562d54-59e1-4554-ad15-9a83edaae03d",
+                "resourcePath": "scripts\\scr_chance_attack_dungeoncore\\scr_chance_attack_dungeoncore.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1596,6 +1628,14 @@
                 "id": "f53679eb-bce7-43da-9320-9af72d8dd681",
                 "resourcePath": "objects\\obj_dungeon_menu\\obj_dungeon_menu.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c55a5568-dd98-4339-a2b1-b6103ecc8fc1",
+            "Value": {
+                "id": "e8842ab6-852c-4daa-995e-3f5695f12d76",
+                "resourcePath": "sprites\\spr_flame_slime\\spr_flame_slime.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1823,6 +1863,14 @@
             }
         },
         {
+            "Key": "e21113f9-bbc7-49ac-aa38-b03823be455a",
+            "Value": {
+                "id": "cffc8dfa-15be-400a-8630-1fa790e3f68f",
+                "resourcePath": "objects\\obj_flame_slime\\obj_flame_slime.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e2bcce7b-fb87-42b7-9e65-99402669a894",
             "Value": {
                 "id": "360efb81-9c92-410e-bacb-6ad4f22fb9bf",
@@ -2043,7 +2091,6 @@
         "8b530a89-09c8-4b87-82e6-c0af1a998494",
         "3133f8bb-2696-4bce-89fe-f5d850ad4612",
         "18ba9e76-c74b-4b85-9c7d-807fd1f9b5ad",
-        "f56c8f10-d7ec-4ed9-8552-4e44363f20c5",
         "3826bebe-6440-4469-9f00-82db2d802875",
         "790cdecf-596c-4741-a599-7c69588edb6f",
         "8e2b3f78-39db-423f-b3e8-f7cd67f021b9",
@@ -2090,7 +2137,6 @@
         "de2eac28-6bde-497e-9de2-23fa75fc2d65",
         "f214023d-8854-440b-bd77-4092b8feead2",
         "f57675f1-e36f-4532-917e-8a8a8ad0ac13",
-        "31b7fb0d-b581-4795-a38c-86ea8488a06f",
         "0e30b6fe-d7f7-49fe-983c-9fb2d9369e4a",
         "a62d98b3-352e-461e-b8c4-acb03654998a",
         "485965be-e831-4d8e-afc8-a7d422796e1e",
@@ -2109,6 +2155,8 @@
         "4d65bd76-c7c3-4198-8453-aab8229e1540",
         "fa9424a7-52a3-4898-af0c-4ee379171d9d",
         "56f65aa3-3c46-4067-87a9-9887eb359224",
+        "31b7fb0d-b581-4795-a38c-86ea8488a06f",
+        "bd54cc11-43f7-4579-9ba7-c79a3e3c90c2",
         "39155ac1-795d-4be8-8979-f3c36f645de2",
         "1c165c36-ba3a-4d6f-8bd0-28b7794911e9",
         "caa55756-1116-4ce6-a919-1dc8e5da790a",
@@ -2122,7 +2170,9 @@
         "9a5635b4-f0c7-45d4-87fc-9ab130a97ef9",
         "86abd521-f00c-4db9-bb4b-75f6c488a7e4",
         "3f5e5246-7662-4aea-b131-607fd532b651",
-        "93fb79f7-86ac-470e-a235-50a95eaefe74"
+        "93fb79f7-86ac-470e-a235-50a95eaefe74",
+        "b1932bc2-be90-4da7-a431-0b72dfc9d9c4",
+        "f56c8f10-d7ec-4ed9-8552-4e44363f20c5"
     ],
     "tutorial": ""
 }

@@ -37,6 +37,8 @@ global.dm_skills = noone;
 global.dm_knowledges = ds_map_create(); 
 global.dm_map = ds_map_create();
 
+//creaturetexts[0] = "None";
+
 
 draw_set_font(defaultfont);
 draw_set_colour(c_white);

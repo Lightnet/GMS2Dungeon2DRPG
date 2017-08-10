@@ -40,6 +40,7 @@ global.Adventurer_Counts = 0; // number of current adventure in the dungeon
 global.Creatures = 0;
 global.Creature_Current = 0;
 global.Creature_Counts = 0;
+global.Creature_OldCounts = 0;
 
 global.Dungeon_Threat_Level = 0;
 global.Dungeon_Helper = noone;

@@ -16,7 +16,7 @@ if(followTarget.followingPath)
     phy_position_y += vspd;
 }
 */
-depth = -y;
+//depth = -y;
 hunger = max(0, hunger - hungerDrop);
 if ( hunger <= 0) {
     hp = max(0, hp - (maxhp/10.0/room_speed));

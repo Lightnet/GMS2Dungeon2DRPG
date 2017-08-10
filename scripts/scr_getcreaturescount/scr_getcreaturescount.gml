@@ -1,4 +1,4 @@
-
+var creatures = array_create(0);
 creatures[0] = obj_slime;
 
 var counts = 0;

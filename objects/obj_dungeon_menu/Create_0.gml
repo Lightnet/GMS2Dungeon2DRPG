@@ -25,6 +25,8 @@ bdisplay = false;
 currentmenu = scr_status_menu;
 current_state = scr_dungeon_menu_state;
 
+creaturetexts[0] = "None";
+
 
 helpkeys[0] = "Dungeon Keys";
 helpkeys[1] = "Tab Key | Camera Toggle";
@@ -33,7 +35,6 @@ helpkeys[3] = "A | Status Menu";
 helpkeys[4] = "Command Mode";
 helpkeys[5] = "Left Mouse | Select Select Unit";
 helpkeys[6] = "Right Mouse | Move Unit";
-
 
 
 buttontabs[0] = instance_create_layer(0,0,"HUD",obj_button);

@@ -6,7 +6,8 @@
     "children": [
         "5a7909fe-d40b-4b29-a2ef-8d28561a8e1b",
         "7606346c-95db-40ae-aeca-bd004262eb12",
-        "e0a2a29e-b850-4af0-9924-fe357f6bad9c"
+        "e0a2a29e-b850-4af0-9924-fe357f6bad9c",
+        "e21113f9-bbc7-49ac-aa38-b03823be455a"
     ],
     "filterType": "GMObject",
     "folderName": "monsters",

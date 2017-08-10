@@ -5,4 +5,5 @@ event_inherited();
 	//draw_path(path,x,y,true);
 	//show_debug_message("draw path");
 //}
-draw_sprite(sprite_index, image_index, x, y);
+//draw_sprite(sprite_index, image_index, x, y);
+//draw_self();

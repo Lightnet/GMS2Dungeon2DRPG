@@ -10,7 +10,9 @@
         "9a5635b4-f0c7-45d4-87fc-9ab130a97ef9",
         "86abd521-f00c-4db9-bb4b-75f6c488a7e4",
         "3f5e5246-7662-4aea-b131-607fd532b651",
-        "93fb79f7-86ac-470e-a235-50a95eaefe74"
+        "93fb79f7-86ac-470e-a235-50a95eaefe74",
+        "b1932bc2-be90-4da7-a431-0b72dfc9d9c4",
+        "f56c8f10-d7ec-4ed9-8552-4e44363f20c5"
     ],
     "filterType": "GMScript",
     "folderName": "dungeoncore",
