@@ -4,6 +4,11 @@ event_inherited();
 
 var inst,xx;
 
+if(hp <= 0){
+	script_state = noone;
+	exit;
+}
+
 inst = instance_nearest(x, y, obj_monster_parent);//works
 //draw_line(x, y, 0, 0);
 if inst != id
