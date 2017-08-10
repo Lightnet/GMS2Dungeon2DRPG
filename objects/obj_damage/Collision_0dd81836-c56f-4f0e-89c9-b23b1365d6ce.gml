@@ -1,10 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 /// damage all lifeforms
+show_debug_message("DAMAGE");
+
 if (other.id != creator){
     other.hp -= damage;
-    other.loyalty -= damage/2;
-    creator.loyalty += damage/3;
+	show_debug_message("HEALTH:"+ string(other.hp));
+	
+	
+    //other.loyalty -= damage/2;
+    //creator.loyalty += damage/3;
     
     //apply the knockback
     if( instance_exists(creator)){

@@ -18,15 +18,17 @@ if(followTarget.followingPath)
 */
 //depth = -y;
 hunger = max(0, hunger - hungerDrop);
+/*
 if ( hunger <= 0) {
     hp = max(0, hp - (maxhp/10.0/room_speed));
     loyalty -= 2/room_speed;
 }
+*/
 
 if(hp <= 0){
-    var corpse = instance_create_layer(x,y,"creatures",obj_corpse_parent);
-    corpse.food = maxHunger/2;
-    corpse.sprite_index = death_sprite;
+    //var corpse = instance_create_layer(x,y,"creatures",obj_corpse_parent);
+    //corpse.food = maxHunger/2;
+    //corpse.sprite_index = death_sprite;
     instance_destroy();
 }
 var corpse = collision_point(x,y,obj_corpse_parent,false,true);

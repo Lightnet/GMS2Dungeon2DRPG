@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 /// damage the player
+/*
 if (other.id != creator){
     //other.hp -= damage;
     //obj_player_stats.hp -= damage;
@@ -18,3 +19,4 @@ if (other.id != creator){
         physics_apply_impulse(x,y,xforce,yforce);
     }
 }
+*/

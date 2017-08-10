@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "1a167fb8-fca1-413d-a9e4-e6bd11442182",
+            "Value": {
+                "id": "203646f3-0e77-4401-92f3-1380721c1e9b",
+                "resourcePath": "views\\1a167fb8-fca1-413d-a9e4-e6bd11442182.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "1c165c36-ba3a-4d6f-8bd0-28b7794911e9",
             "Value": {
                 "id": "bff91e8d-a8cf-46d2-9664-eb5bef68a40a",
@@ -839,6 +847,14 @@
             }
         },
         {
+            "Key": "59337dd5-5a96-44aa-bf39-c01c596984de",
+            "Value": {
+                "id": "45ff5d33-65b4-4f62-a02f-90c2266f1b0d",
+                "resourcePath": "sprites\\spr_damage_circle\\spr_damage_circle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5a7909fe-d40b-4b29-a2ef-8d28561a8e1b",
             "Value": {
                 "id": "cfcda5af-6aa5-42c2-b480-6c6b9043ba72",
@@ -923,6 +939,14 @@
             "Value": {
                 "id": "359d9af2-3d5b-4925-b4d2-13ab107150a0",
                 "resourcePath": "scripts\\scr_base_starving\\scr_base_starving.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "690eddf5-ddf2-4e51-9f46-749c21438612",
+            "Value": {
+                "id": "f371fb7a-f2b6-4817-9285-fcfd33ec9ddb",
+                "resourcePath": "scripts\\scr_adventurer_attack\\scr_adventurer_attack.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2157,6 +2181,7 @@
         "56f65aa3-3c46-4067-87a9-9887eb359224",
         "31b7fb0d-b581-4795-a38c-86ea8488a06f",
         "bd54cc11-43f7-4579-9ba7-c79a3e3c90c2",
+        "690eddf5-ddf2-4e51-9f46-749c21438612",
         "39155ac1-795d-4be8-8979-f3c36f645de2",
         "1c165c36-ba3a-4d6f-8bd0-28b7794911e9",
         "caa55756-1116-4ce6-a919-1dc8e5da790a",
