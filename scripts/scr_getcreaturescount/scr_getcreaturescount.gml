@@ -1,5 +1,7 @@
 var creatures = array_create(0);
 creatures[0] = obj_slime;
+creatures[1] = obj_flame_slime;
+creatures[2] = obj_chinlin;
 
 var counts = 0;
 

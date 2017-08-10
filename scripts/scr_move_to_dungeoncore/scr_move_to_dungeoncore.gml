@@ -24,7 +24,20 @@ _CELLHEIGHT = CELLHEIGHT;
 		var px = path_get_point_x(path,path_step);
 		var py = path_get_point_y(path,path_step);
 		//show_debug_message("path x:"+string(px)+ ":"+string(py));
-		mp_potential_step(px,py,3,false);//doesnt work with the physics checked
+		//mp_potential_step(px,py,3,false);//doesnt work with the physics checked
+		
+		if(object_get_physics(object_index) ){
+			var facedir = point_direction(x,y,px,py);
+			var dirx = lengthdir_x(3,facedir);
+			var diry = lengthdir_y(3,facedir);
+			phy_position_x +=dirx;
+			phy_position_y +=diry;
+		}else{
+			mp_potential_step(px,py,3,false);
+		}
+		
+		
+		
 		//path_start(path, 5, path_action_stop, false);
 		//show_debug_message( "PATH:" + string( path_get_length(path)));
 		//show_debug_message( "PATH:" + string( path_get_number(path)));

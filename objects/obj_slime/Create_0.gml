@@ -3,3 +3,5 @@
 event_inherited();
 name = "Slime"
 objtype = "Creature";
+hp = 20;
+maxhp = hp;
