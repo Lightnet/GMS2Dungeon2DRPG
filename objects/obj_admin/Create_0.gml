@@ -7,7 +7,7 @@ bshow_map = false;
 
 
 buttontabs[0] = instance_create_layer(0,0,"HUD",obj_button);
-buttontabs[0].name = "Adventure";
+buttontabs[0].name = "Adventurers";
 buttontabs[0].scriptfile = scr_admintabs;
 buttontabs[0].arg = 0;
 
@@ -24,8 +24,8 @@ buttontabs[2].arg = 2;
 
 for(var i = 0; i < array_length_1d(buttontabs);i++){
 	//buttons[i].brender = false;
-	buttontabs[i].x = (160*i) + 8*i;
-	buttontabs[i].width = 160;
+	buttontabs[i].x = (200*i) + 8*i;
+	buttontabs[i].width = 200;
 }
 
 btnadventures[0] = instance_create_layer(0,0,"HUD",obj_button);

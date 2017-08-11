@@ -19,6 +19,9 @@ inst = instance_nearest(x, y, obj_monster_parent);//works
 if inst != id
 {
 	//draw_line(x, y, inst.x, inst.y);
-	draw_line(x, y, inst.x+16, inst.y+16);
+	draw_rectangle(x,y,x+2,y+2,false);
+	
+	draw_rectangle(inst.x,inst.y,inst.x+2,inst.y+2,false);
+	draw_line(x, y, inst.x, inst.y);
 	//show_debug_message("Line?");
 }

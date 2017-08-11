@@ -1,7 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 ///initialize the lifeform
-//phy_fixed_rotation = true;
+
+//check if physics is able to set rotation to fixed
+if(object_get_physics(object_index) ){
+	phy_fixed_rotation = true;
+}
+
 hp = 3;
 maxhp = 3;
 monsterTier = 1;

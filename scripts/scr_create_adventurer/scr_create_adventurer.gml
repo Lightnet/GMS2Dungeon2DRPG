@@ -52,7 +52,7 @@ if(instance_exists(obj_dungeon_exit)){
 	
 	//check if object is not noone then create
 	if(obj_class != noone){
-		var ot_adventure = instance_create_layer(xx,yy+32,"adventures",obj_class);
+		var ot_adventure = instance_create_layer(xx,yy+32,"adventurers",obj_class);
 		with(ot_adventure){
 			//path_add_point(path, obj_dungeon_core.x, obj_dungeon_core.y, 5);
 			//path_start(path, 5, path_action_stop, false);		

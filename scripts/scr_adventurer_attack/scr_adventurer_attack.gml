@@ -13,21 +13,17 @@ if inst != id
 		//show_debug_message("HEALTH EMENY:"+string(inst.hp));
 		//show_debug_message(" POINT DIR:"+string(dirx) +":"+ string(diry));
 		dirx = x + dirx;
-		if(diry < 0){
-			diry = y + (diry - 16);
-		}else{
-			diry = y + (diry + 16);
-		}
+		diry = y + diry;
 		
 		//show_debug_message("DIR:"+string(dirx) +":"+ string(diry));
-		/*
+		
 		var damage = instance_create_layer(dirx,diry,"effects", obj_damage);
 		//var damage = instance_create_layer(x,y,"effects", obj_damage);
 		//damage.sprite_index = //image draw
 		damage.creator = id;
 		//damage.damage = obj_player_stats.attack;
 		damage.damage = 5;
-		*/
+		
 		//attacked = true;
 		alarm[10] = room_speed *2;
 	}
