@@ -3,12 +3,5 @@
 event_inherited();
 //param status
 
-
-
-
 //AI bot setup
-
-
 script_state = noone;
-
-

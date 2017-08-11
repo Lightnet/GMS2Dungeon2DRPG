@@ -4,6 +4,17 @@ event_inherited();
 objtype = ADVENTURER;
 job = "None";
 
+hp = 100;
+maxhp = hp;
+mp = 100;
+maxmp = mp;
+
+attack = 100;
+defense = 50;
+magicattack = 100;
+magicdefense = 100;
+
+
 breturnhome = false;
 btodungeoncore = true;
 
@@ -11,8 +22,6 @@ path = path_add();
 //alarm[0] = room_speed;
 
 path_step = 1; //default for step event
-
-
 
 //alarm[0] = room_speed;
 

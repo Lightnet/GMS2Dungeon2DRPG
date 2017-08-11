@@ -3,18 +3,30 @@
 ///initialize the lifeform
 
 //check if physics is able to set rotation to fixed
-if(object_get_physics(object_index) ){
+if(object_get_physics(object_index)){
 	phy_fixed_rotation = true;
 }
 
 hp = 3;
 maxhp = 3;
+mp = 0;
+maxmp = mp;
+
 monsterTier = 1;
-name = "testName";
+name = "None";
 spd = 1;
+
+//battle settings
+attack = 0;
+defense = 0;
+magicattack = 0;
+magicdefense = 0;
+
+//object type for creature, adventure, dungeon blocks, and other
+
 issnap = false;
 isfixed = false;
-objtype = VOID;
+objtype = VOID; //CREATURE, ADVENTURER, WALL, FLOOR, TRAP
 
 //health bar
 bdisplay_healthbar = true;
@@ -64,7 +76,7 @@ warningHunger = 0.6;
 criticalHunger = 0.3;
 
 //faction
-var inst;
+//var inst;
 faction = factions.neutral;
 baseFaction = factions.neutral;
 mineStrength = 10;

@@ -2,7 +2,6 @@
 // You can write your code in this editor
 event_inherited();
 
-
 var inst,xx;
 
 inst = instance_nearest(x, y, obj_adventurer_parent);//works
@@ -17,10 +16,6 @@ if inst != id
 	}
 	//show_debug_message("Line?");
 }
-
-
-
-
 
 
 if(script_state != noone){

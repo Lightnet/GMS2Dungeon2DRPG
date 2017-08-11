@@ -27,9 +27,3 @@ for(var i=0; i < array_length_1d(creaturetexts) ;i++){
     
     draw_text((xx)-320,yy-64+(i*32),creaturetexts[i]);
 }
-
-
-
-
-
-

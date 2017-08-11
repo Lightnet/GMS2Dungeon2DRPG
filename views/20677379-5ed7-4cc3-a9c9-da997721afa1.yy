@@ -10,7 +10,7 @@
         "690eddf5-ddf2-4e51-9f46-749c21438612"
     ],
     "filterType": "GMScript",
-    "folderName": "adventure_script",
+    "folderName": "adventure_scripts",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

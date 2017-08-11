@@ -8,7 +8,7 @@
         "36f9e5db-adba-4eca-af9a-532a6cbc9f25"
     ],
     "filterType": "GMScript",
-    "folderName": "creature_script",
+    "folderName": "creature_scripts",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
