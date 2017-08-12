@@ -8,7 +8,7 @@
         "92341b10-a1ec-4325-8645-a63fadfc7a03"
     ],
     "filterType": "GMScript",
-    "folderName": "dungeonbuild",
+    "folderName": "dungeon_build",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

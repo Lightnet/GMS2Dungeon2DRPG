@@ -3,8 +3,8 @@
 ///draw floor and wall
 //red is wall
 //green is floor
-//if(bdraw_pathmap){
-    //draw_set_alpha(0.3);
-    //mp_grid_draw(grid_path);
-    //draw_set_alpha(1);
-//}
+if(global.bdisplay_map_path){
+    draw_set_alpha(0.3);
+    mp_grid_draw(grid_path);
+    draw_set_alpha(1);
+}

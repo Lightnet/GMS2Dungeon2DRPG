@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "0e7ea834-b140-435e-b430-e5ae8eb20ea9",
+            "Value": {
+                "id": "75b0a4f7-20bb-428b-ae14-5bb0c9067775",
+                "resourcePath": "scripts\\scr_display_paths\\scr_display_paths.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0f1ad9dc-51e4-4f1a-a4af-130650b4e760",
             "Value": {
                 "id": "faac4087-d59d-40f1-8e4c-4aa9cc5c86be",
@@ -428,6 +436,14 @@
                 "id": "af8220b3-8885-446f-b1fe-808e540bb6c0",
                 "resourcePath": "sprites\\spr_water\\spr_water.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2e2f9051-908e-4088-bf18-b2b9852ea42c",
+            "Value": {
+                "id": "8917b6f2-3676-4cdf-a766-324a5d90bee1",
+                "resourcePath": "scripts\\scr_creature_detect_range\\scr_creature_detect_range.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1983,6 +1999,14 @@
             }
         },
         {
+            "Key": "ecf66043-20f7-4643-93b1-d8b6f0826c82",
+            "Value": {
+                "id": "2b2c0c62-d634-46c4-ab4e-f2c6cb8ec657",
+                "resourcePath": "scripts\\scr_creature_move_to_target\\scr_creature_move_to_target.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f0754c36-0852-4c64-925a-fad7844fd173",
             "Value": {
                 "id": "f524cf97-3d34-4868-83a3-0678377c44b2",
@@ -2200,6 +2224,8 @@
         "690eddf5-ddf2-4e51-9f46-749c21438612",
         "0c9da67d-5db9-4578-94aa-73ff594e62a2",
         "36f9e5db-adba-4eca-af9a-532a6cbc9f25",
+        "2e2f9051-908e-4088-bf18-b2b9852ea42c",
+        "ecf66043-20f7-4643-93b1-d8b6f0826c82",
         "39155ac1-795d-4be8-8979-f3c36f645de2",
         "1c165c36-ba3a-4d6f-8bd0-28b7794911e9",
         "caa55756-1116-4ce6-a919-1dc8e5da790a",
@@ -2207,6 +2233,7 @@
         "e7dbdb2b-d8dd-4f5b-97a6-d3a269235b3e",
         "4948f324-a9c5-47ad-a897-8bd6acf9e1be",
         "067fed2e-e013-4b03-be33-22a106798142",
+        "0e7ea834-b140-435e-b430-e5ae8eb20ea9",
         "228aea7d-19eb-4002-b2cf-93e0c5d319ed",
         "4d0bd9ab-3932-4bc9-a798-64514ace4a72",
         "48fc0a1c-c30b-47b6-83d8-b1f74fdfd8db",

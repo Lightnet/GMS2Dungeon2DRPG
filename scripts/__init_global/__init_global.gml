@@ -36,11 +36,12 @@ global.Adventurers = 0;
 global.Adventurer_Current = 0;
 global.Adventurer_Counts = 0; // number of current adventure in the dungeon
 
-
 global.Creatures = 0;
 global.Creature_Current = 0;
 global.Creature_Counts = 0;
 global.Creature_OldCounts = 0;
+
+global.grid_path = noone;
 
 global.Dungeon_Threat_Level = 0;
 global.Dungeon_Helper = noone;
@@ -53,8 +54,11 @@ global.Dungeon_RNGTime = 0;
 global.Dungeon_Upgrading = false; //for kick party for dungeon upgrading
 global.level_generate = false;
 
-/// default var only
+//debug tools
+global.bdisplay_map_path = false;
+global.bdisplay_creature_path = false;
 
+/// default var only
 global._ismenu = true;
 global._ishud = true;
 //global.level_generate = true; //create level default  boolean

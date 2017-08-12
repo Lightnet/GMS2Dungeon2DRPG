@@ -15,7 +15,7 @@
         "f56c8f10-d7ec-4ed9-8552-4e44363f20c5"
     ],
     "filterType": "GMScript",
-    "folderName": "dungeoncore",
+    "folderName": "dungeon_core",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

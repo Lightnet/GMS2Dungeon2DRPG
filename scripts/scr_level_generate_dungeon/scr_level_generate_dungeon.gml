@@ -1,12 +1,10 @@
-///scr_level_generate_dungeon()
-
+///setup dungeon base
 _WALL = WALL;
 _FLOOR = FLOOR;
 _CELLWIDTH = CELLWIDTH;
 _CELLHEIGHT = CELLWIDTH;
 
-bdraw_pathmap = true; 
-
+grid_path = noone;
 
 /// initialize dungeon create
 //global.level_generate = true;
@@ -105,19 +103,4 @@ if(global.level_generate){
     grid_path = mp_grid_create(0,0,width,height,_CELLWIDTH,_CELLHEIGHT);
 	
 	global.grid_path = grid_path;
-    
-    //create object grid instance object
-    //grid_tileobjects = ds_grid_create(width, height);
-    
-    //this place traps grid base
-    //grid_trapobjects = ds_grid_create(width, height);
-    //ds_grid_set_region(grid_trapobjects, 0, 0, width - 1, height - 1, noone);
-    //place item objects place in dungeon
-    //dungeonbjects = ds_list_create();    
-    //place item objects loot item
-    //itemobjects = ds_list_create();
-    
-    //fill the grid with the void
-    //ds_grid_set_region(grid, 0, 0, width - 1, height - 1, _WALL);
-
 }

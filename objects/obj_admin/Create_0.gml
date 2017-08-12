@@ -97,12 +97,16 @@ mapbtns[0].name = "Data";
 mapbtns[0].scriptfile = scr_update_data;
 
 mapbtns[1] = instance_create_layer(0,0,"HUD",obj_button);
-mapbtns[1].name = "Paths";
+mapbtns[1].name = "U Paths";
 mapbtns[1].scriptfile = scr_update_paths;
 
 mapbtns[2] = instance_create_layer(0,0,"HUD",obj_button);
-mapbtns[2].name = "Tiles";
-mapbtns[2].scriptfile = scr_update_tiles;
+mapbtns[2].name = "D Paths";
+mapbtns[2].scriptfile = scr_display_paths;
+
+mapbtns[3] = instance_create_layer(0,0,"HUD",obj_button);
+mapbtns[3].name = "Tiles";
+mapbtns[3].scriptfile = scr_update_tiles;
 
 for(var i = 0; i < array_length_1d(mapbtns);i++){
 	//buttons[i].brender = false;

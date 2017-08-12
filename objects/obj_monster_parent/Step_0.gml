@@ -8,6 +8,11 @@ inst = instance_nearest(x, y, obj_adventurer_parent);//works
 //draw_line(x, y, 0, 0);
 if inst != id
 {
+	if(distance_to_object(inst) < 32){
+		script_state = scr_creature_move_to_target;
+	}
+	
+	//attack in range
 	//draw_line(x, y, inst.x+8, inst.y+8);
 	if(distance_to_object(inst) < 10){
 		script_state = scr_creature_attack;

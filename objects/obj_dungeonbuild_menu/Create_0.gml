@@ -1,5 +1,12 @@
 /// @description setup build menu
 // You can write your code in this editor
+
+_WALL = WALL;
+_FLOOR = FLOOR;
+_VOID = VOID;
+_CELLWIDTH = CELLWIDTH;
+_CELLHEIGHT = CELLHEIGHT;
+				
 /// initialize build
 isbuild = false;
 
@@ -12,7 +19,8 @@ objectissnap = false;
 objectobjtype = VOID;
 objectisfixed = false;
 
-selectobject = -1;
+selectobject = noone;
+selectindex = noone;
 placeobject = noone;
 
 //build options
@@ -33,32 +41,32 @@ slotlist = noone;// ds_grid_create(0,4);
 
 tileblock[0, 0] = "Wall";
 tileblock[0, 1] = spr_wall;
-tileblock[0, 2] = obj_wall;
+tileblock[0, 2] = obj_wall_ph;
 tileblock[0, 3] = obj_wall;
 
 tileblock[1, 0] = "Floor";
 tileblock[1, 1] = spr_floor;
-tileblock[1, 2] = obj_floor;
+tileblock[1, 2] = obj_floor_ph;
 tileblock[1, 3] = obj_floor;
 
 tileblock[2, 0] = "Dirt";
 tileblock[2, 1] = spr_dirt;
-tileblock[2, 2] = obj_dirt;
+tileblock[2, 2] = obj_dirt_ph;
 tileblock[2, 3] = obj_dirt;
 
 tileblock[3, 0] = "Rock";
 tileblock[3, 1] = spr_rock;
-tileblock[3, 2] = obj_rock;
+tileblock[3, 2] = obj_rock_ph;
 tileblock[3, 3] = obj_rock;
 
 tileblock[4, 0] = "Sand";
 tileblock[4, 1] = spr_sand;
-tileblock[4, 2] = obj_sand;
+tileblock[4, 2] = obj_sand_ph;
 tileblock[4, 3] = obj_sand;
 
 tileblock[5, 0] = "Water";
 tileblock[5, 1] = spr_water;
-tileblock[5, 2] = obj_water;
+tileblock[5, 2] = obj_water_ph;
 tileblock[5, 3] = obj_water;
 
 tileblock[6, 0] = "Lava";

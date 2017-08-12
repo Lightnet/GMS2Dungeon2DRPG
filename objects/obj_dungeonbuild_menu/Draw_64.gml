@@ -38,26 +38,7 @@ if(global._ishud){
     
         //draw down button
         draw_sprite(spr_down,0,4,yy+((32+4)*5)-64);     
-        
-        /*if(screenx > 4 and screenx < (32+4) and screeny > (display_get_gui_height()-32) and screeny < (display_get_gui_height())){    
-            //show_debug_message("in bound?");
-            if(mouse_check_button(mb_left) == true and alarm[0] <= 0){
-                if(issnap){
-                    issnap = false;
-                    draw_sprite(spr_grid_off,0,4,display_get_gui_height()-32);
-                }else{
-                    issnap = true;
-                    draw_sprite(spr_grid_on,0,4,display_get_gui_height()-32);
-                }
-                alarm[0] = room_speed/6;
-                //show_debug_message("snap?");
-            }
-            isboundbox = true;
-        }else{
-            //show_debug_message("out bound?");
-        }*/
-        
-        
+                
         // draw icons
         list_count = 0;
         if(list_index <= 0){

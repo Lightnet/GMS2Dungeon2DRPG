@@ -72,9 +72,9 @@ if (global._ishud)
         if(screenx > 4 and screenx < (32+4) and screeny > (yy - ((32+4)*4)) and screeny < (yy - (32*3))){    
             //show_debug_message("in bound?");
             if(mouse_check_button(mb_left) == true and alarm[0] <= 0){
-                if(selectobject != -1){
+                if(selectobject != noone){
                     //selectobject.visible = false;
-                    selectobject = -1;
+                    selectobject = noone;
                 }
                 alarm[0] = room_speed/6;
             }
@@ -146,13 +146,16 @@ if (global._ishud)
                 if(mouse_check_button(mb_left) == true and alarm[0] <= 0){
                     //show_debug_message(string(slotlist[i,0]));
                     //check if select exist destory
-                    if(selectobject == -1){
+                    if(selectobject == noone){
+						show_debug_message("clear select object var...");
                     }else{
-                        selectedobject = -1;
+                        selectedobject = noone;
                     }
                     
-                    //create object
-                    selectobject = i;
+                    //selected object
+					//slotlist[ i, 2] = placeholder object for filter type
+                    selectobject = slotlist[ i, 2];
+					selectindex = i;
                     show_debug_message( string(i) );
                     
                     placeholder = instance_create_layer(-100,-100,"dungeonlayout", slotlist[ i, 2]);
@@ -167,7 +170,7 @@ if (global._ishud)
                         instance_destroy();
                     }
                     //selectobject.visible = true;
-                    placeobject = slotlist[ i, 2];
+                    placeobject = slotlist[ i, 3];
                     alarm[0] = room_speed/6;
                 }
             }
@@ -198,58 +201,74 @@ if (global._ishud)
         //show_debug_message(string(mouse_x)+":"+string(mouse_x));
         //place object
         if((mouse_check_button_pressed(mb_left) == true) and (isboundbox == false )){	
-            if(placeobject != noone and selectobject != -1){
+            if(placeobject != noone and selectobject != noone){
                 //if(!selectobject.iscollision){
                 var gx = mouse_x div sizegrid;
                 var gy = mouse_y div sizegrid;
                 show_debug_message("place....");
-                //var obj_instant;
 				
-				var _wall = WALL;
-				
-				
-				if(objectobjtype == _wall){
-					show_debug_message("test");
-				}
-				
-				
-				
-				/*
-                
-                if(objectobjtype == WALL){
+				if(objectobjtype == _WALL){
                     
                     var wall = instance_position((gx*sizegrid)+(sizegrid/2),(gy*sizegrid)+(sizegrid/2), obj_wall);
-                    var flooring = instance_position((gx*sizegrid)+(sizegrid/2),(gy*sizegrid)+(sizegrid/2), obj_flooring);
+                    var flooring = instance_position((gx*sizegrid)+(sizegrid/2),(gy*sizegrid)+(sizegrid/2), obj_floor);
                     
-                    if (wall == noone && flooring != noone)
+                    if (wall != noone || flooring != noone)
                     {
-                        instance_create_layer(gx*CELL_WIDTH, gy*CELL_HEIGHT,"dungeonlayout", placeobject);
-                    }
+						if(wall != noone){
+							with(wall){
+								instance_destroy();
+							}
+						}
+						
+						if(flooring != noone){
+							with(flooring){
+								instance_destroy();
+							}
+						}
+						//need to check other condtions > to do list
+                        instance_create_layer(gx*_CELLWIDTH, gy*_CELLWIDTH,"dungeonlayout", placeobject);
+						//show_debug_message("CREATE FLOOR!");
+                    }else{
+						instance_create_layer(gx*_CELLWIDTH, gy*_CELLWIDTH,"dungeonlayout", placeobject);
+					}
                     show_debug_message("Type WALL");
+					obj_level_generate_dungeon.alarm[0] = room_speed/5;
                 }
-                else if (objectobjtype == FLOOR)
+				
+				if (objectobjtype == _FLOOR)
                 {
                     
-                    var flooring = instance_position((gx*sizegrid)+(sizegrid/2),(gy*sizegrid)+(sizegrid/2), obj_flooring);
+                    var flooring = instance_position((gx*sizegrid)+(sizegrid/2),(gy*sizegrid)+(sizegrid/2), obj_floor);
+					var wall = instance_position((gx*sizegrid)+(sizegrid/2),(gy*sizegrid)+(sizegrid/2), obj_wall);
                     
                     if (flooring != noone)
                     {
-                        while (flooring != noone)
+                        with (flooring)
                         {
-                            with (flooring)
-                            {
-                                instance_destroy();
-                            }
-                            flooring = instance_position((gx*sizegrid)+(sizegrid/2),(gy*sizegrid)+(sizegrid/2), obj_flooring);
+                            instance_destroy();
                         }
-                        instance_create_layer(gx*CELL_WIDTH, gy*CELL_HEIGHT,"dungeonlayout", placeobject);
+                        //instance_create_layer(gx*_CELLWIDTH, gy*_CELLWIDTH,"dungeonlayout", placeobject);
+						show_debug_message("CREATE FLOOR!");
                     }
+					
+					if (wall != noone)
+                    {
+                        with (wall)
+                        {
+                            instance_destroy();
+                        }
+                    }
+					//need to check other condtions > to do list
+					instance_create_layer(gx*_CELLWIDTH, gy*_CELLWIDTH,"dungeonlayout", placeobject);
+					show_debug_message("CREATE FLOOR!");
                     show_debug_message("Type FLOOR");
+					obj_level_generate_dungeon.alarm[0] = room_speed/5;
                 }
-                else if (objectobjtype == VOID)
+				
+				if (objectobjtype == _VOID)
                 {
                     
-                    var flooring = instance_position((gx*sizegrid)+(sizegrid/2),(gy*sizegrid)+(sizegrid/2), obj_flooring);
+                    var flooring = instance_position((gx*sizegrid)+(sizegrid/2),(gy*sizegrid)+(sizegrid/2), obj_floor);
                     
                     if (flooring != noone)
                     {   
@@ -257,20 +276,18 @@ if (global._ishud)
                         var yplace = mouse_y;
                         if (objectissnap)
                         {
-                            xplace = gx*CELL_WIDTH;
-                            yplace = gy*CELL_HEIGHT;
+                            xplace = gx*_CELLWIDTH;
+                            yplace = gy*_CELLWIDTH;
                         }
                         
                         var createdObj = instance_create_layer(xplace, yplace,"dungeonlayout", placeobject);
                         if (createdObj.object_index == obj_spawner)
                         {
-                            createdObj.monster_summon =  slotlist[ selectobject, 3];
+                            createdObj.monster_summon =  slotlist[ selectindex, 3];
                         }
                     }
                     show_debug_message("Type VOID");
                 }
-                
-				*/
 				
 				
                 /*
@@ -356,15 +373,12 @@ if (global._ishud)
                 //}else{
                     //show_debug_message("There is collision!");
                 //}
-				
-				
 				*/
-                
             }
         }
     }else{
-        if(selectobject != -1){
-            selectedobject = -1;
+        if(selectobject != noone){
+            selectedobject = noone;
         }
 		
 		for (var i = 0; i < array_length_1d(buttontabs); i++){
