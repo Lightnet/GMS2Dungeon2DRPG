@@ -7,6 +7,9 @@ movespeed = 20;
 bfollowplayer = false;
 bcameracontrol = true;
 
+drag_x = 0;
+drag_y = 0;
+
 // move to player
 if(instance_exists(obj_player)){
     x = obj_player.x;

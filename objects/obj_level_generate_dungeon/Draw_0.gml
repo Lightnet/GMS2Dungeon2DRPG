@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Draw map path
 // You can write your code in this editor
 ///draw floor and wall
 //red is wall
