@@ -22,7 +22,7 @@ if inst != id
 		//damage.sprite_index = //image draw
 		damage.creator = id;
 		//damage.damage = obj_player_stats.attack;
-		damage.damage = 5;
+		damage.damage = attack;
 		
 		//attacked = true;
 		alarm[10] = room_speed *2;

@@ -7,3 +7,5 @@ hp = 20;
 maxhp = hp;
 mp = 50;
 maxmp = mp;
+
+attack = 10;
