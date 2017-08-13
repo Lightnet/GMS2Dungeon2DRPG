@@ -31,6 +31,7 @@ if(hp <= 0){
     //corpse.sprite_index = death_sprite;
     instance_destroy();
 }
+/*
 var corpse = collision_point(x,y,obj_corpse_parent,false,true);
 if (corpse && alarm[11] <= 0)
 {
@@ -40,4 +41,4 @@ if (corpse && alarm[11] <= 0)
     alarm[11] = 1*room_speed;
     loyalty += 5;
 }
-
+*/

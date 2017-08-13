@@ -68,5 +68,12 @@ if(obj_input.f2_key){
 	}
 }
 
+if(obj_input.help_key){
+	bhelpkey = true;
+}else{
+	bhelpkey = false;
+}
+
+
 //make sure game dungeon game mode is set to it.
 script_execute(dungeon_mode);

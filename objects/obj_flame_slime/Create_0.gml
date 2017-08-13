@@ -5,3 +5,5 @@ name = "Flame Slime"
 objtype = "Creature";
 hp = 20;
 maxhp = hp;
+mp = 50;
+maxmp = mp;

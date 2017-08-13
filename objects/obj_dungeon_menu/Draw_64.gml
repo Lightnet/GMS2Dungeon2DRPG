@@ -23,7 +23,3 @@ if(bdisplay){
     
     script_execute(currentmenu);
 }
-
-if(obj_input.help_key){
-	script_execute(scr_display_help_key);
-}

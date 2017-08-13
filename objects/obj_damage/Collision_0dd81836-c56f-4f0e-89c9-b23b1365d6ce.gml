@@ -5,9 +5,13 @@ show_debug_message("DAMAGE");
 
 if (other.id != creator){
     other.hp -= damage;
+	
+	//check hp and do something here!
+	if(other.hp <=0){
+		
+	}
+	
 	show_debug_message("HEALTH:"+ string(other.hp));
-	
-	
     //other.loyalty -= damage/2;
     //creator.loyalty += damage/3;
     

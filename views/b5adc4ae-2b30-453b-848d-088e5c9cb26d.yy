@@ -13,7 +13,7 @@
         "18f6de68-6207-442f-8300-3c628a2b533d"
     ],
     "filterType": "GMScript",
-    "folderName": "rpg",
+    "folderName": "enums",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

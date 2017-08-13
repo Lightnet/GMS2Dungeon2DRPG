@@ -7,14 +7,17 @@ if(object_get_physics(object_index)){
 	phy_fixed_rotation = true;
 }
 
+//base info creature status
 hp = 3;
 maxhp = 3;
 mp = 0;
 maxmp = mp;
 
-monsterTier = 1;
-name = "None";
-spd = 1;
+level = 0;
+experience = 0;
+nextexperience = 10;
+
+dpconvertrate = 10;//hp + mp / dpconvertrate = dp
 
 //battle settings
 attack = 0;
@@ -22,8 +25,19 @@ defense = 0;
 magicattack = 0;
 magicdefense = 0;
 
-//object type for creature, adventure, dungeon blocks, and other
+//paramse
+//name = "testname";
+bsingle_select = false;
+teamid = -1;
+owner = "";
+creator = "";
 
+monsterTier = 1;//monster tier or rank?
+name = "None";//creature name
+spd = 1; //movment speed? not set yet
+
+
+//object type for creature, adventure, dungeon blocks, and other
 issnap = false;
 isfixed = false;
 objtype = VOID; //CREATURE, ADVENTURER, WALL, FLOOR, TRAP
@@ -35,6 +49,7 @@ hb_offset_x = 0;
 hb_offset_y = 0;
 hb_width = 32;
 hb_height = 4;
+
 
 //target
 target = noone;
@@ -51,13 +66,6 @@ point = 0;
 path_done = true;
 bpath_start = false;
 path = path_add();
-
-//paramse
-name = "testname";
-bsingle_select = false;
-teamid = -1;
-owner = "";
-creator = "";
 
 //loyalty
 loyalty = 50;

@@ -74,6 +74,21 @@ dung_floor_size[1] = 100;
 //Stores the map of the current floor.
 
 
+//help text
+helpkeys[0] = "Dungeon Keys";
+helpkeys[1] = "Tab Key | Camera Toggle";
+helpkeys[2] = "B | Build Menu";
+helpkeys[3] = "Q | Status Menu";
+helpkeys[4] = "F2 | Debug Menu";
+helpkeys[5] = "Mouse Wheel | Zome Camera";
+helpkeys[6] = "Mouse Middle | Pan Camera";
+helpkeys[7] = "";
+helpkeys[8] = "Command Mode";
+helpkeys[9] = "Left Mouse | Select Select Unit";
+helpkeys[10] = "Right Mouse | Move Unit";
+
+bhelpkey = false;
+
 //setup tests!
 scr_init_skills();
 scr_init_items();
