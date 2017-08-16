@@ -1015,6 +1015,14 @@
             }
         },
         {
+            "Key": "6e82efa5-65e7-41a1-9ef7-ea81c8315d18",
+            "Value": {
+                "id": "38ced09c-b7ab-46e7-91d2-94f2356282b3",
+                "resourcePath": "views\\6e82efa5-65e7-41a1-9ef7-ea81c8315d18.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "71eef30f-3bd4-4946-b272-3be84526e953",
             "Value": {
                 "id": "1ded10e4-2691-4e46-8a18-f29032acfaae",
