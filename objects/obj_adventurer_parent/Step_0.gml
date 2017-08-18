@@ -27,7 +27,13 @@ if inst != id
 	//show_debug_message("Line?");
 }
 
+if((bspriter == true)and(object_index != undefined)){
+	spriter_update(self);
+}
+
 if(script_state != noone){
 	script_execute(script_state);
 }
+
+
 

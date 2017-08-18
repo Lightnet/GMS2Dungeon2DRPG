@@ -17,6 +17,7 @@ _CELLHEIGHT = CELLHEIGHT;
 		if(point_distance(x,y,xx,yy) < 5){
 			//path_step++;
 			script_state = noone;
+			bdestroy = true;
 			instance_destroy();//destroy adventure when exit the dungeon
 		}
 		

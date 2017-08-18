@@ -14,3 +14,5 @@ attack = 15;
 defense = 1;
 magicattack = 0;
 magicdefense = 0;
+
+spriter_apply_character_map(self,"male archer");

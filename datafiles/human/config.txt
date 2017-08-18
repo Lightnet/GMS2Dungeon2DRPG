@@ -1,0 +1,12 @@
+headgear:
+0.489305
+0.168449
+
+
+
+Pants front:
+
+0.509302
+0.660465
+
+Pants side:

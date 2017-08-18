@@ -14,3 +14,6 @@ if inst != id
 	show_debug_message("Line?");
 }
 */
+if(bspriter){
+	spriter_render(self,false);
+}

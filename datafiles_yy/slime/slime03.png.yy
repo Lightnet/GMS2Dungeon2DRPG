@@ -1,5 +1,5 @@
 {
-    "id": "1d6882ab-d80a-4574-8d76-b33821b487af",
+    "id": "2a7bd3ca-098a-4621-a376-214c9c273d4b",
     "modelName": "GMIncludedFile",
     "mvc": "1.0",
     "name": "slime03.png",
