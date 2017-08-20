@@ -8,7 +8,8 @@
         "e7269efa-8f8a-49b8-bef1-01575861e283",
         "f0754c36-0852-4c64-925a-fad7844fd173",
         "908a2b19-7c5d-49ac-9869-54c0931eb9a3",
-        "67a19907-c1f4-425b-8db0-f43519955ec6"
+        "67a19907-c1f4-425b-8db0-f43519955ec6",
+        "888d40f2-1e8a-478c-afe6-cf87e5b5e480"
     ],
     "filterType": "GMObject",
     "folderName": "creatures",

@@ -101,7 +101,7 @@ if(bcameracontrol){
         window_set_cursor(cr_size_all);
         //show_debug_message("drag? "+string(drag_x)+":"+string(drag_y));
         //show_debug_message("drag? :"+string(view_xview[0]));
-		show_debug_message("drag?");
+		//show_debug_message("drag?");
 		
 		camera_set_view_pos(view_camera[0], view_xview, view_yview);
     }
