@@ -44,10 +44,10 @@ var xx = display_get_gui_width()/2;
 
 //display name
 scr_init_tileblocks();
-
 scr_init_traps();
-
 scr_init_creature_build();
+scr_init_tools_builds();
+scr_init_items_builds();
 
 slotlist = tileblock;
 
@@ -87,7 +87,8 @@ buttontabs[4].scriptfile = scr_buildtab_select;
 buttontabs[4].arg = 4;
 
 for (var i = 0; i < array_length_1d(buttontabs); i++){
-	buttontabs[i].x = xx+(i*144)-(144*5/2);
+	buttontabs[i].width = 155;
+	buttontabs[i].x = xx+(i*160)-(160*5/2);
 	buttontabs[i].y = 64;
 }
 

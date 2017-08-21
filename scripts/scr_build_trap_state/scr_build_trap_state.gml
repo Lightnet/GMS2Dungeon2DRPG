@@ -149,68 +149,12 @@
                 //if(!selectobject.iscollision){
                 var gx = mouse_x div sizegrid;
                 var gy = mouse_y div sizegrid;
-                show_debug_message("place....");
+                
 				
-				if(objectobjtype == _WALL){
-                    var wall = instance_position((gx*sizegrid)+(sizegrid/2),(gy*sizegrid)+(sizegrid/2), obj_wall);
-                    var flooring = instance_position((gx*sizegrid)+(sizegrid/2),(gy*sizegrid)+(sizegrid/2), obj_floor);
-                    
-                    if (wall != noone || flooring != noone)
-                    {
-						if(wall != noone){
-							with(wall){
-								instance_destroy();
-							}
-						}
-						
-						if(flooring != noone){
-							with(flooring){
-								instance_destroy();
-							}
-						}
-						//need to check other condtions > to do list
-                        instance_create_layer(gx*_CELLWIDTH, gy*_CELLWIDTH,"dungeonlayout", placeobject);
-						//show_debug_message("CREATE FLOOR!");
-                    }else{
-						instance_create_layer(gx*_CELLWIDTH, gy*_CELLWIDTH,"dungeonlayout", placeobject);
-					}
-                    show_debug_message("Type WALL");
-					obj_level_generate_dungeon.alarm[0] = room_speed/5;
-                }
-				
-				if (objectobjtype == _FLOOR)
+				if (objectobjtype == _TRAP)
                 {
-                    
-                    var flooring = instance_position((gx*sizegrid)+(sizegrid/2),(gy*sizegrid)+(sizegrid/2), obj_floor);
-					var wall = instance_position((gx*sizegrid)+(sizegrid/2),(gy*sizegrid)+(sizegrid/2), obj_wall);
-                    
-                    if (flooring != noone)
-                    {
-                        with (flooring)
-                        {
-                            instance_destroy();
-                        }
-                        //instance_create_layer(gx*_CELLWIDTH, gy*_CELLWIDTH,"dungeonlayout", placeobject);
-						show_debug_message("CREATE FLOOR!");
-                    }
-					
-					if (wall != noone)
-                    {
-                        with (wall)
-                        {
-                            instance_destroy();
-                        }
-                    }
-					//need to check other condtions > to do list
-					instance_create_layer(gx*_CELLWIDTH, gy*_CELLWIDTH,"dungeonlayout", placeobject);
-					show_debug_message("CREATE FLOOR!");
-                    show_debug_message("Type FLOOR");
-					obj_level_generate_dungeon.alarm[0] = room_speed/5;
-                }
-				
-				if (objectobjtype == _VOID)
-                {
-                    
+					show_debug_message("place....");
+					    
                     var flooring = instance_position((gx*sizegrid)+(sizegrid/2),(gy*sizegrid)+(sizegrid/2), obj_floor);
                     
                     if (flooring != noone)
@@ -223,13 +167,14 @@
                             yplace = gy*_CELLWIDTH;
                         }
                         
-                        var createdObj = instance_create_layer(xplace, yplace,"dungeonlayout", placeobject);
-                        if (createdObj.object_index == obj_spawner)
-                        {
-                            createdObj.monster_summon = traps[ selectindex, 3];
-                        }
+                        var createdObj = instance_create_layer(xplace, yplace,"traps", placeobject);
+						//got to work on this code for summon
+                        //if (createdObj.object_index == obj_spawner)
+                        //{
+                            //createdObj.monster_summon = traps[ selectindex, 3];
+                        //}
                     }
-                    show_debug_message("Type VOID");
+                    show_debug_message("Type TRAP");
                 }
             }
         }

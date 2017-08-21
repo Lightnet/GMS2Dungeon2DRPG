@@ -656,10 +656,36 @@
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "id": "c91deb90-d4bb-46be-ac59-79e4db09d50a",
+            "id": "6961552a-faf1-4242-83d6-8c6a2e4f1b28",
             "modelName": "GMRInstanceLayer",
             "mvc": "1.0",
             "depth": 700,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "layers": [
+                
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "name": "traps",
+            "userdefined_depth": false,
+            "visible": true,
+            "instances": [
+                
+            ]
+        },
+        {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "id": "c91deb90-d4bb-46be-ac59-79e4db09d50a",
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "depth": 800,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -5244,7 +5270,7 @@
             "id": "08ddac85-2aa3-4b2f-8a84-3b64dcc83fd3",
             "modelName": "GMRBackgroundLayer",
             "mvc": "1.0",
-            "depth": 800,
+            "depth": 900,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,

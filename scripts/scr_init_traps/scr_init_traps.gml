@@ -1,19 +1,6 @@
-traps[0,0] = "Box";
-traps[0,1] = spr_box;
-traps[0,2] = obj_box;
-traps[0,3] = obj_box;
+traps = noone;
 
-traps[1,0] = "Spike";
-traps[1,1] = spr_spike;
-traps[1,2] = obj_spike;
-traps[1,3] = obj_spike;
-
-tools[0,0] = "Spike";
-tools[0,1] = spr_spike;
-tools[0,2] = obj_spike;
-tools[0,3] = obj_spike;
-
-items[0,0] = "Spike";
-items[0,1] = spr_spike;
-items[0,2] = obj_spike;
-items[0,3] = obj_spike;
+traps = scr_list_add(traps,"Summon Circle",spr_summon,obj_summon,obj_summon);
+traps = scr_list_add(traps,"Spike",spr_spike,obj_spike_ph,obj_spike);
+//traps = scr_list_add("Pit Fall",spr_summon,obj_spike,obj_spike);
+//traps = scr_list_add("Rolling Boulder",spr_summon,obj_spike,obj_spike);
