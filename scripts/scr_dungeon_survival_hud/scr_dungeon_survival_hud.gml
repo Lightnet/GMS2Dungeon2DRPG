@@ -14,3 +14,5 @@ draw_text(4,16*2+6, "View Mode:" + cameratext);
 
 draw_text(4,16*4+6, "Creatures:" + string(global.Creature_Counts));
 draw_text(4,16*5+6, "Adventurers:" + string(global.Adventurer_Counts));
+
+draw_text(4,16*6+6, "Instances:" + string(instance_count ));

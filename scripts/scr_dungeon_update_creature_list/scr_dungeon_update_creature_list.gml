@@ -6,7 +6,7 @@ creaturetexts = array_create(0);
 var creatures = array_create(0);
 creatures[0] = obj_slime;
 creatures[1] = obj_chinlin;
-creatures[2] = obj_flame_slime;
+//creatures[2] = obj_flame_slime;
 
 //var counts = 0;
 var creature_type_count = 0;

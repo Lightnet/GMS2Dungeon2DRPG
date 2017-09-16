@@ -156,6 +156,7 @@
 					show_debug_message("place....");
 					    
                     var flooring = instance_position((gx*sizegrid)+(sizegrid/2),(gy*sizegrid)+(sizegrid/2), obj_floor);
+                    var objtrap = instance_position((gx*sizegrid)+(sizegrid/2),(gy*sizegrid)+(sizegrid/2), obj_trap_parent);					
                     
                     if (flooring != noone)
                     {   
@@ -166,6 +167,12 @@
                             xplace = gx*_CELLWIDTH;
                             yplace = gy*_CELLWIDTH;
                         }
+						
+						if (objtrap != noone){
+							with(objtrap){
+								instance_destroy();
+							}
+						}
                         
                         var createdObj = instance_create_layer(xplace, yplace,"traps", placeobject);
 						//got to work on this code for summon
