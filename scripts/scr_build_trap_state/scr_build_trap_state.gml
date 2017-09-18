@@ -144,7 +144,7 @@
         }
         
         //place object
-        if((mouse_check_button_pressed(mb_left) == true) and (isboundbox == false )){	
+        if((mouse_check_button_pressed(mb_left) == true) and (isboundbox == false )and(alarm[0] <= 0)){	
             if(placeobject != noone and selectobject != noone){
                 //if(!selectobject.iscollision){
                 var gx = mouse_x div sizegrid;
@@ -168,13 +168,28 @@
                             yplace = gy*_CELLWIDTH;
                         }
 						
+						var bfound = false;
+						
 						if (objtrap != noone){
-							with(objtrap){
-								instance_destroy();
-							}
+							bfound = true;
+							show_debug_message("Found Trap Same Grid!");
+							//with(objtrap){
+								//instance_destroy();
+							//}
 						}
-                        
-                        var createdObj = instance_create_layer(xplace, yplace,"traps", placeobject);
+                        if ((bfound == false))
+						{
+							var cost_build = 0;
+							//get the cost for the trap object
+							with(placeobject){
+								cost_build = cost_dp;
+							}
+							obj_dungeon_status.dp = obj_dungeon_status.dp - cost_build;
+							show_debug_message("DP:" + string(obj_dungeon_status.dp));
+							var createdObj = instance_create_layer(xplace, yplace,"traps", placeobject);
+							alarm[0] = room_speed/6;
+						}
+							
 						//got to work on this code for summon
                         //if (createdObj.object_index == obj_spawner)
                         //{

@@ -25,7 +25,7 @@ dp = 1000;
 maxdp = 1000;
 
 b_dp_regan = true;
-dp_regan = 1;
+dp_regan = 0;
 dp_regan_time = room_speed;
 
 
