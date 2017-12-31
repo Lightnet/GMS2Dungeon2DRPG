@@ -12,7 +12,8 @@
         "f5673dd0-0523-42f5-bb8e-8f2fb728be4e",
         "876ae55f-49ff-4d41-a1bf-4087f840321a",
         "bfc739ea-069c-4244-8843-59bd167f7c87",
-        "6b841c1a-69a8-4e2d-8e16-8007dac146db"
+        "6b841c1a-69a8-4e2d-8e16-8007dac146db",
+        "27e52153-5aa1-40fc-b707-3bfcaeb19a5e"
     ],
     "filterType": "GMObject",
     "folderName": "dungeon_core",

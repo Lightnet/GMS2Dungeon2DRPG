@@ -7,7 +7,7 @@
         "dcab0e03-642e-4cb4-b939-134c07cbd34b"
     ],
     "filterType": "GMScript",
-    "folderName": "inptus",
+    "folderName": "inputs",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

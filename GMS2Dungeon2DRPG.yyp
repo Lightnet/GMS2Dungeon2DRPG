@@ -42,7 +42,7 @@
             "Key": "00decd8b-5cb2-4e28-b9d9-dfb9f427066e",
             "Value": {
                 "id": "5acc083f-6caf-456c-954b-785c363ff3e1",
-                "resourcePath": "objects\\obj_dungeonbuild_menu\\obj_dungeonbuild_menu.yy",
+                "resourcePath": "objects\\obj_dungeonbuild_menu_00\\obj_dungeonbuild_menu_00.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -375,6 +375,14 @@
             }
         },
         {
+            "Key": "15edc980-8201-4766-9af6-84f4c0b2597e",
+            "Value": {
+                "id": "75c7815d-446e-4af9-ad82-0e4d2a767426",
+                "resourcePath": "views\\15edc980-8201-4766-9af6-84f4c0b2597e.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "163df042-fb9a-40ea-9ca6-4466df868751",
             "Value": {
                 "id": "96e916ab-7ecb-41a0-a74b-7db2d3567b2e",
@@ -596,6 +604,14 @@
                 "id": "4c2bb688-fd9f-409f-b436-8058cde63152",
                 "resourcePath": "sprites\\spr_dungeonmenu\\spr_dungeonmenu.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "27e52153-5aa1-40fc-b707-3bfcaeb19a5e",
+            "Value": {
+                "id": "9c78c2ba-210e-4277-bf1b-850fc914a7cf",
+                "resourcePath": "objects\\obj_dungeon_build_menu\\obj_dungeon_build_menu.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -863,6 +879,14 @@
             }
         },
         {
+            "Key": "38a7ee9e-6e0f-455f-89fc-dd618d4505d4",
+            "Value": {
+                "id": "3a70cd75-cb7c-47ec-96e2-5ae2a4c15c8f",
+                "resourcePath": "scripts\\scr_load\\scr_load.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "39155ac1-795d-4be8-8979-f3c36f645de2",
             "Value": {
                 "id": "dfdbfb37-5e21-40f4-9782-044a981a453b",
@@ -891,6 +915,14 @@
             "Value": {
                 "id": "328a1447-8c69-4706-8f68-c04764f0570f",
                 "resourcePath": "scripts\\scr_string_copy_words\\scr_string_copy_words.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3af88d96-30c3-4fa4-b258-e4cdb60e9bfb",
+            "Value": {
+                "id": "8c81373a-b693-4c0f-a0cb-2e977426ac9b",
+                "resourcePath": "scripts\\scr_dungeon_build_ui\\scr_dungeon_build_ui.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1204,6 +1236,14 @@
                 "id": "2e8ed4ca-3fd3-41f1-adcb-86aafd6413f8",
                 "resourcePath": "sprites\\spr_slime_green_01\\spr_slime_green_01.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "508805d4-304f-4d7b-9477-b504d307834d",
+            "Value": {
+                "id": "a37ad540-042e-48a6-b4b8-a1ba7726127d",
+                "resourcePath": "scripts\\scr_save\\scr_save.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1815,6 +1855,14 @@
             }
         },
         {
+            "Key": "808e2d6d-3ba6-4da3-a3cd-09706c7add06",
+            "Value": {
+                "id": "81584d48-51dd-4839-b0ad-3e7dc7b1c638",
+                "resourcePath": "scripts\\scr_dungeon_build_menu\\scr_dungeon_build_menu.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "816dd5cc-1832-4291-bf6e-c7b055b6e446",
             "Value": {
                 "id": "56318851-e14c-4bc0-92e0-4c824bcdfc9d",
@@ -2111,6 +2159,14 @@
             }
         },
         {
+            "Key": "934467c8-5b4a-4bff-b37b-e5dae2fb02a4",
+            "Value": {
+                "id": "47bd2ce7-d11b-4db9-b6a1-2b26001bbdaf",
+                "resourcePath": "views\\934467c8-5b4a-4bff-b37b-e5dae2fb02a4.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "93615390-4a71-4585-a330-380139241c97",
             "Value": {
                 "id": "b52909a4-b274-4c61-b7f9-658c4000feb0",
@@ -2364,6 +2420,14 @@
                 "id": "ac39457b-de63-4501-9760-e2c411474816",
                 "resourcePath": "views\\a2d6ab03-167b-4383-a149-6b9d8db46a00.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a3cde479-c5a5-469c-8b7b-02723cef9ec9",
+            "Value": {
+                "id": "8ee191f0-82e9-4b3b-9529-ec59fccfc342",
+                "resourcePath": "scripts\\scr_draw_button\\scr_draw_button.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3580,6 +3644,7 @@
         "9c50968c-53e9-4b24-a538-ba83df3fe88b",
         "01d53452-2659-4f56-abcf-7e36f7eab518",
         "b8c935c1-806c-481b-a818-a2ce7788304d",
+        "a3cde479-c5a5-469c-8b7b-02723cef9ec9",
         "544f9d0e-e1e9-426a-8fb0-6f6d4322687c",
         "5e7f3daf-8a13-49ea-b345-6559d85bd69b",
         "8ecfb38e-ab31-4d79-84a8-3f087d4f28c5",
@@ -3675,7 +3740,11 @@
         "69a36ea5-7e89-4bc0-bc6e-de70b2d5f2cf",
         "b57daee4-8fab-479a-bfa3-9a65ece2dfd2",
         "e3de748b-ccef-4584-897f-6e4da8a96a09",
-        "cd975de3-fc1b-424e-ba88-543ca362d56b"
+        "cd975de3-fc1b-424e-ba88-543ca362d56b",
+        "808e2d6d-3ba6-4da3-a3cd-09706c7add06",
+        "3af88d96-30c3-4fa4-b258-e4cdb60e9bfb",
+        "508805d4-304f-4d7b-9477-b504d307834d",
+        "38a7ee9e-6e0f-455f-89fc-dd618d4505d4"
     ],
     "tutorial": ""
 }
