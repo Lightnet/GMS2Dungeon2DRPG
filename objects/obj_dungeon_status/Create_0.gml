@@ -3,6 +3,9 @@
 /// initialize the player stats
 if(instance_number(obj_dungeon_status) > 1) instance_destroy();
 
+//global._ishud = false;
+
+
 name = "unknown";
 race = "unknown";
 born_gender = "unknown";
