@@ -4,3 +4,9 @@
 
 //menuui = noone;
 menuui = scr_mainmenu;
+
+bedit = true;
+
+playername = "Guest";
+displayname = "Guest";
+limit = 20;
