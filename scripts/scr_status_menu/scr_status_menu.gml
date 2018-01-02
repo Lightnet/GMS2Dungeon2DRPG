@@ -11,7 +11,7 @@ if(instance_exists(obj_dungeon_status)){
    status[2] = "Gender:" + string(obj_dungeon_status.born_gender);
    status[3] = "Age:" + string(obj_dungeon_status.age);
    status[4] = "Level:" + string(obj_dungeon_status.level);
-   status[5] = "Rank:" + obj_dungeon_status.threatlevel;
+   status[5] = "Rank:" + obj_dungeon_status.rank;
 }
 
 
