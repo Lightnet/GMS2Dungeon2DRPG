@@ -12,16 +12,18 @@ born_gender = "unknown";
 age = 0;
 hp = 100;
 maxhp = hp;
+magic = 100;
+maxmagic = magic;
 stamina = 100;
 maxstamina = stamina;
-expr = 0;
-maxexpr = 3;
+experience = 0;
+maxexperience = 3;
 level = 1;
 attack = 10;
 defense = 100;
 magicattack = 10;
 magicdefense = 100;
-threatlevel = "E";
+rank = "E";
 
 //dungeon stats
 dp = 1000;
@@ -36,9 +38,15 @@ dp_regan_time = room_speed;
 global.dm_creatures = ds_map_create();
 global.dm_inventory = ds_map_create();
 global.dm_abilities = ds_map_create();
-global.dm_skills = noone;
+global.dm_skills = ds_map_create();
 global.dm_knowledges = ds_map_create(); 
 global.dm_map = ds_map_create();
+
+titles = ds_map_create();
+ds_map_add(titles, "World Translater", 1);
+ds_map_add(titles, "Goddess Blessing of Creation", 1);
+
+
 
 //creaturetexts[0] = "None";
 

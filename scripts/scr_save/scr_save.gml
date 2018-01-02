@@ -17,30 +17,38 @@ show_debug_message("Instances:");
 
 //user data
 var ds_user = ds_map_create();
-ds_map_add(ds_user, "name", "Guest");
-ds_map_add(ds_user, "race", "Dungeon");
-ds_map_add(ds_user, "gender", "Male");
+if(instance_exists(obj_dungeon_status)){
+	ds_map_add(ds_user, "name", obj_dungeon_status.name);
+	ds_map_add(ds_user, "race", obj_dungeon_status.race);
+	ds_map_add(ds_user, "gender", obj_dungeon_status.born_gender);
 
-ds_map_add(ds_user, "date", "00/00/0000");
-ds_map_add(ds_user, "age", 0);
-ds_map_add(ds_user, "threatlevel", 999);
+	ds_map_add(ds_user, "date", "00/00/0000");
+	ds_map_add(ds_user, "age", obj_dungeon_status.age);
+	ds_map_add(ds_user, "Rank", obj_dungeon_status.rank);
 
-ds_map_add(ds_user, "dp", 2000);
-ds_map_add(ds_user, "dp_regan", 10);
+	ds_map_add(ds_user, "dp", obj_dungeon_status.dp);
+	ds_map_add(ds_user, "dp_regan", obj_dungeon_status.dp_regan);
 
-ds_map_add(ds_user, "level", 999);
-ds_map_add(ds_user, "experience", 999);
-ds_map_add(ds_user, "maxexperience", 999);
+	ds_map_add(ds_user, "level", obj_dungeon_status.level);
+	ds_map_add(ds_user, "experience", obj_dungeon_status.experience);
+	ds_map_add(ds_user, "maxexperience", obj_dungeon_status.maxexperience);
 
-ds_map_add(ds_user, "health", 999);
-ds_map_add(ds_user, "maxhealth", 999);
-ds_map_add(ds_user, "magic", 999);
-ds_map_add(ds_user, "maxmagic", 999);
+	ds_map_add(ds_user, "health", obj_dungeon_status.hp);
+	ds_map_add(ds_user, "maxhealth", obj_dungeon_status.maxhp);
+	ds_map_add(ds_user, "magic", obj_dungeon_status.magic);
+	ds_map_add(ds_user, "maxmagic", obj_dungeon_status.maxmagic);
+	
+	ds_map_add(ds_user, "stamina", obj_dungeon_status.stamina);
+	ds_map_add(ds_user, "maxstamina", obj_dungeon_status.maxstamina);
 
-ds_map_add(ds_user, "attack", 999);
-ds_map_add(ds_user, "defense", 999);
-ds_map_add(ds_user, "magicattack", 999);
-ds_map_add(ds_user, "magicdefense", 999);
+	ds_map_add(ds_user, "attack", obj_dungeon_status.attack);
+	ds_map_add(ds_user, "defense", obj_dungeon_status.defense);
+	ds_map_add(ds_user, "magicattack", obj_dungeon_status.magicattack);
+	ds_map_add(ds_user, "magicdefense", obj_dungeon_status.magicdefense);
+	
+	ds_map_add_map(ds_user, "titles", obj_dungeon_status.titles);
+	
+}
 
 
 ds_user = json_encode(ds_user);
