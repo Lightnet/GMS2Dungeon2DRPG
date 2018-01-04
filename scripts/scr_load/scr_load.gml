@@ -3,7 +3,7 @@
 
 show_debug_message("load game");
 
-var grid_map = ds_grid_create(64, 64);
+var grid_map = noone;
 
 if(file_exists("Save.sav")){
 	show_debug_message("LOADING DATA SAVE!");

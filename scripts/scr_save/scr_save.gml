@@ -59,8 +59,6 @@ file_text_writeln(saveFile);
 
 ds_map_destroy(ds_user);
 
-
-
 //var ds_tilemap = ds_map_create();
 
 grid_map = ds_grid_create(64, 64);
@@ -73,17 +71,6 @@ ds_grid_set_region(grid_map, 0,0, 64, 64, 0);
 ds_grid_set(grid_map, 0, 0, 1);
 
 
-
-//tempString = ds_grid_write(global.tile_left);
-//sg_map = ds_grid_write(grid_map);
-//show_debug_message(string(ds_grid_write(grid_map)));
-//sg_map = json_encode(grid_map);
-
-//sg_map = ds_grid_write(grid_map);
-
-//show_debug_message(string(sg_map));
-
-//file_text_write_string(saveFile,sg_map);
 file_text_write_string(saveFile,ds_grid_write(grid_map));
 file_text_writeln(saveFile);
 

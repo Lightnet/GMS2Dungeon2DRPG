@@ -16,6 +16,7 @@ isbuild = false;
 //array_create()
 isboundbox = false;
 issnap = true;
+snaptext = "";
 sizegrid = 32;
 objectissnap = false;
 objectobjtype = VOID;
@@ -98,5 +99,7 @@ drawstate = noone;
 
 //menustate = scr_build_blocks_state;
 //uistate = scr_build_blocks_ui;
-uistate = scr_dungeon_build_menu;
+//uistate = scr_dungeon_build_menu;
 //drawstate = scr_build_blocks_draw;
+
+uistate = scr_ui_build_blocks;
