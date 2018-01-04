@@ -7,9 +7,12 @@ var yy = display_get_gui_height()/2;
 var screenx = device_mouse_x_to_gui(0);
 var screeny = device_mouse_y_to_gui(0);
 draw_text(xx-64,16,"BUILD MODE");
-var id_name = "none";
-   
-draw_text(xx-64,32,"Select: "+id_name);
+
+if(id_name != noone){
+	draw_text(xx-64,32,"Select: "+id_name);
+}else{
+	draw_text(xx-64,32,"Select: None");
+}
 draw_set_halign(fa_left);
 
 if(scr_draw_button(4,128)){
@@ -33,7 +36,8 @@ draw_text(4,128,snaptext);
 
 if(scr_draw_button(4,128+20)){
 	if(alarm[0] <= 0){
-		
+		selectedobject = noone;
+		id_name = noone;
 		alarm[0] = room_speed / 8;
 	}
 }
@@ -95,6 +99,29 @@ for (i = list_index; i < array_height_2d(slotlist); i++){
 	if(scr_draw_button(4,yy+((32+4)*list_count)-64,32,32)){
 		if(alarm[0] <= 0){
 			show_debug_message("click");
+			
+			selectedobject = noone;
+			
+			selectobject = slotlist[ i, 2];
+			selectindex = i;
+            show_debug_message( string(i) );
+                    
+            placeholder = instance_create_layer(-100,-100,"dungeonlayout", slotlist[ i, 2]);
+                    
+            show_debug_message( string(placeholder) );
+            //set variables holder item
+			id_name = placeholder.name;
+            objectissnap = placeholder.issnap;
+            objectobjtype = placeholder.objtype;
+            objectisfixed = placeholder.isfixed;
+            with (placeholder)
+            {
+                instance_destroy();
+            }
+            //selectobject.visible = true;
+            placeobject = slotlist[ i, 3];
+			
+			
 			alarm[0] = room_speed / 8;
 		}
 	}

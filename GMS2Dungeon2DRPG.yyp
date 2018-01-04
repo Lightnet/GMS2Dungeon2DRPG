@@ -1311,6 +1311,14 @@
             }
         },
         {
+            "Key": "54d6a67c-2662-4354-a54e-7c43ab461414",
+            "Value": {
+                "id": "445fed56-8b67-4203-86be-23ec768450d7",
+                "resourcePath": "scripts\\scr_build_draw_state\\scr_build_draw_state.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5507c9a2-9d01-49f7-beeb-a6071fd916f8",
             "Value": {
                 "id": "4837bc09-d209-4e63-9c38-ff14d8fc2af0",
@@ -1852,6 +1860,14 @@
                 "id": "024643ed-8c82-43b1-b03d-6981ca269108",
                 "resourcePath": "objects\\obj_weapon_animation\\obj_weapon_animation.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7a07e7f1-c4b6-4d6e-ae8d-2b8a8a349891",
+            "Value": {
+                "id": "728f3d63-52e4-4ac2-869d-ac12c464395a",
+                "resourcePath": "scripts\\scr_rect_detect\\scr_rect_detect.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3725,6 +3741,7 @@
         "01d53452-2659-4f56-abcf-7e36f7eab518",
         "b8c935c1-806c-481b-a818-a2ce7788304d",
         "a3cde479-c5a5-469c-8b7b-02723cef9ec9",
+        "7a07e7f1-c4b6-4d6e-ae8d-2b8a8a349891",
         "544f9d0e-e1e9-426a-8fb0-6f6d4322687c",
         "5e7f3daf-8a13-49ea-b345-6559d85bd69b",
         "8ecfb38e-ab31-4d79-84a8-3f087d4f28c5",
@@ -3744,6 +3761,7 @@
         "780c8776-0255-46e8-97b7-a420b71c0938",
         "713be458-e2fe-4ebe-98c2-0116c4f23c2c",
         "e1ed1d09-827e-4484-bbc3-14dc57782ebd",
+        "54d6a67c-2662-4354-a54e-7c43ab461414",
         "dcab0e03-642e-4cb4-b939-134c07cbd34b",
         "8ea04775-0efd-48b5-8180-3b548d963b59",
         "a4b162d8-c578-472d-8be9-0b8dc6f8cc7a",

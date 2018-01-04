@@ -40,6 +40,7 @@ pickobject = noone;//pick object in the room
 pickid = -1;
 
 slotlist = noone;// ds_grid_create(0,4);
+id_name = "none";
 
 var xx = display_get_gui_width()/2;
 
@@ -102,4 +103,5 @@ drawstate = noone;
 //uistate = scr_dungeon_build_menu;
 //drawstate = scr_build_blocks_draw;
 
+drawstate = scr_build_draw_state
 uistate = scr_ui_build_blocks;
