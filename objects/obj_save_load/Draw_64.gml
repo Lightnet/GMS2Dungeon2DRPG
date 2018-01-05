@@ -17,6 +17,7 @@ if(scr_draw_button(4,myheight-64)){
 	if(alarm[0] <= 0){
 		show_debug_message("click load")
 		script_execute(scr_load);
+		room_goto(rm_generate_dungeon);
 		alarm[0] = room_speed / 8;
 	}
 }

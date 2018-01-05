@@ -3,4 +3,4 @@
 //script_execute(scr_level_generate_dungeon);
 scr_level_generate_dungeon();
 
-alarm[0] = room_speed;
+//alarm[0] = room_speed;

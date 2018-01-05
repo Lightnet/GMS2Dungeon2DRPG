@@ -53,8 +53,6 @@ if(bedit){
 }
 
 
-
-
 draw_text(4+200,4+4+20*3, string(displayname));
 
 if(scr_draw_button(0,4*2+20*4,128+32,20)){
@@ -73,7 +71,7 @@ if(scr_draw_button(0,4*3+20*5,128+32,20)){
 		//menuui = scr_mainmenu;
 		obj_dungeon_status.name = playername;
 		obj_dungeon_status.born_gender = "Male";
-		room_goto(rm_dungeon_prototype);
+		room_goto(rm_dungeon_default);
 		alarm[0] = room_speed / 8;
 	}
 }

@@ -70,11 +70,24 @@ if(file_exists("Save.sav")){
 	
 	show_debug_message("t_map:" + string(t_map));
 	
-	grid_map = ds_grid_create(64, 64);
+	grid_map = ds_grid_create(32, 32);
 	
 	ds_grid_read(grid_map, t_map);
 	
 	show_debug_message(string(grid_map[# 0,0]))
+	
+	
+	px = 0;
+	py = 0;
+	
+	for (py = 0;py < 32;py++){
+		var col = "";
+		for (px = 0;px < 32;px++){
+			col += string(grid_map[# px,py]);
+			//show_debug_message("x:"+string(px)+" y:"+string(py));
+		}
+		show_debug_message(col);
+	}
 	
 	
 	

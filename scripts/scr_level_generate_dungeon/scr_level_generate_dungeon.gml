@@ -10,6 +10,9 @@ grid_path = noone;
 //global.level_generate = true;
 //check level generate dungeon
 if(global.level_generate){
+	
+	show_debug_message("CREATE DUNGEON TEST!");
+	/*
     // resize room
     room_width = (_CELLWIDTH/16) * 720;
     room_height = (_CELLHEIGHT/16) * 720;
@@ -37,12 +40,6 @@ if(global.level_generate){
     //place item objects loot item
     itemobjects = ds_list_create();
     //show_debug_message("dasdasdasdasd");
-    //ds_list_add(objectplaces,"test");
-    //ds_list_add(objectplaces,"tests");
-    //show_debug_message(string(array_length_1d(objectplaces)));
-        
-    //show_debug_message("Place obj?");
-    //show_debug_message(string(grid_placeobjects));
     
     //fill the grid with the void
     ds_grid_set_region(grid, 0, 0, width - 1, height - 1, _WALL);
@@ -89,18 +86,17 @@ if(global.level_generate){
     }
     show_debug_message(current_time);
     show_debug_message(current_time-t);
+	*/
     //show_debug_message(string(grid));
 }else{
-
+	/*
 	//set the grid and height
     var width = room_width div _CELLWIDTH;
     var height = room_height div _CELLHEIGHT;
-    
     //create the grid FLOOR,WALL,VOID
     grid = ds_grid_create(width, height);
-    
     //create pathfinding grid
     grid_path = mp_grid_create(0,0,width,height,_CELLWIDTH,_CELLHEIGHT);
-	
 	global.grid_path = grid_path;
+	*/
 }

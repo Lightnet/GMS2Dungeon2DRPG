@@ -1959,6 +1959,14 @@
             }
         },
         {
+            "Key": "838d8e70-fe7a-4caf-a60a-4ac13be5ad03",
+            "Value": {
+                "id": "faee1e29-cd8b-417a-8960-0b5f8af493bc",
+                "resourcePath": "rooms\\rm_dungeon_default\\rm_dungeon_default.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "844cd2b4-5aa6-4bdf-a4e9-7f65c21f332c",
             "Value": {
                 "id": "0d03a16f-4704-4a4b-9a59-ab4937b3c75c",
