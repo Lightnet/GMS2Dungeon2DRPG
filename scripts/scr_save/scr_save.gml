@@ -61,12 +61,9 @@ ds_map_destroy(ds_user);
 
 //var ds_tilemap = ds_map_create();
 
-var grid_map = ds_grid_create(64, 64);
+//var grid_map = ds_grid_create(64, 64);
 
-//grid_map
 
-// Setting the Grid to empty space
-ds_grid_set_region(grid_map, 0,0, 32, 32, 0);
 
 //ds_grid_set(grid_map, 0, 0, 1);
 
@@ -81,8 +78,6 @@ with all {
 		ds_grid_set(grid_map, x div 32, y div 32, 1);
 	}
 }
-
-
 
 file_text_write_string(saveFile,ds_grid_write(grid_map));
 file_text_writeln(saveFile);

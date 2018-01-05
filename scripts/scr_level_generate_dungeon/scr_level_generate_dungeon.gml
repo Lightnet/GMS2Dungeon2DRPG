@@ -12,6 +12,26 @@ grid_path = noone;
 if(global.level_generate){
 	
 	show_debug_message("CREATE DUNGEON TEST!");
+	
+		if(instance_exists(obj_save_load)){
+			show_debug_message("Map Grid");
+			//show_debug_message(string( obj_save_load.grid_map[# 0,0]));
+			
+			for(var py = 0; py < 32; py++){
+				var col = "";
+				for(var px = 0; px < 32; px++){	
+					col += string(obj_save_load.grid_map[# px,py]);
+					if(obj_save_load.grid_map[# px,py] == 1){
+						var o_floor = instance_create_layer(px*32,py*32,"dungeonlayout",obj_floor);
+						show_debug_message("floor");
+					}else{
+						var o_wall = instance_create_layer(px*32,py*32,"dungeonlayout",obj_wall);
+					}
+				}
+				show_debug_message(col);
+			}
+		}
+	
 	/*
     // resize room
     room_width = (_CELLWIDTH/16) * 720;

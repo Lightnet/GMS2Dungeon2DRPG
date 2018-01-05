@@ -3,7 +3,7 @@
 
 show_debug_message("load game");
 
-var grid_map = noone;
+//var grid_map = noone;
 
 if(file_exists("Save.sav")){
 	show_debug_message("LOADING DATA SAVE!");
@@ -70,26 +70,26 @@ if(file_exists("Save.sav")){
 	
 	show_debug_message("t_map:" + string(t_map));
 	
-	grid_map = ds_grid_create(32, 32);
+	var ds_map = ds_grid_create(32, 32);
 	
-	ds_grid_read(grid_map, t_map);
+	ds_grid_read(ds_map, t_map);
 	
-	show_debug_message(string(grid_map[# 0,0]))
+	show_debug_message(string(ds_map[# 0,0]))
 	
 	
-	px = 0;
-	py = 0;
+	//px = 0;
+	//py = 0;
 	
-	for (py = 0;py < 32;py++){
-		var col = "";
-		for (px = 0;px < 32;px++){
-			col += string(grid_map[# px,py]);
+	//for (py = 0;py < 32;py++){
+		//var col = "";
+		//for (px = 0;px < 32;px++){
+			//col += string(ds_map[# px,py]);
 			//show_debug_message("x:"+string(px)+" y:"+string(py));
-		}
-		show_debug_message(col);
-	}
+		//}
+		//show_debug_message(col);
+	//}
 	
-	
+	grid_map = ds_map;
 	
 	
 	
