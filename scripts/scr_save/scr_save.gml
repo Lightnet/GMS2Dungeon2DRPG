@@ -3,17 +3,45 @@
 
 show_debug_message("save game");
 
-
 if (file_exists("Save.sav")) file_delete("Saves.sav");
 //write file
 var saveFile = file_text_open_write("Save.sav");
+
+//===============================================
+//Room Index
+//===============================================
 //write room idx
 var SaveRoom = room;
 show_debug_message("ROOM:"+string(SaveRoom))
 file_text_write_real(saveFile,SaveRoom);
 file_text_writeln(saveFile);
 
-show_debug_message("Instances:");
+//===============================================
+//Save Object View
+//===============================================
+var ds_objview = ds_map_create();
+
+if(instance_exists(obj_view)){
+	ds_map_add(ds_objview, "x", obj_view.x);
+	ds_map_add(ds_objview, "y", obj_view.y);
+	
+	ds_map_add(ds_objview, "zoom", obj_view.zoom);
+	ds_map_add(ds_objview, "bfollowplayer", obj_view.bfollowplayer);
+	ds_map_add(ds_objview, "bcameracontrol", obj_view.bcameracontrol);
+}
+
+var saveobjview = json_encode(ds_objview);
+//show_debug_message(saveobjview);
+//object view settings
+file_text_write_string(saveFile,saveobjview);
+file_text_writeln(saveFile);
+ds_map_destroy(ds_objview);
+
+//===============================================
+//Save Dungeon Status
+//===============================================
+
+//show_debug_message("Instances:");
 
 //user data
 var ds_user = ds_map_create();
@@ -56,16 +84,16 @@ ds_user = json_encode(ds_user);
 
 file_text_write_string(saveFile,ds_user);
 file_text_writeln(saveFile);
-
 ds_map_destroy(ds_user);
 
+//===============================================
+//Save Floor and Wall
+//===============================================
 //var ds_tilemap = ds_map_create();
-
 //var grid_map = ds_grid_create(64, 64);
-
-
-
 //ds_grid_set(grid_map, 0, 0, 1);
+
+var grid_map = ds_grid_create(32, 32);
 
 with all {
 	if(obj_wall == object_index){
@@ -80,14 +108,54 @@ with all {
 }
 
 file_text_write_string(saveFile,ds_grid_write(grid_map));
+ds_map_destroy(grid_map);
 file_text_writeln(saveFile);
 
 
+//===============================================
+//Room objects
+//===============================================
 
+var ds_objects = ds_map_create();
+var ds_tmp = noone;
+var count = 0;
 
+with all {
+	
+	if(obj_wall == object_index){
+		//show_debug_message("found!");
+		ds_tmp = ds_map_create();
+		ds_map_add(ds_tmp,"objtype","obj_wall");
+	}
+	
+	if(obj_floor == object_index){
+		//show_debug_message("found!");
+		ds_tmp = ds_map_create();
+		ds_map_add(ds_tmp,"objtype","obj_floor");
+	}
+	
+	if(obj_dungeon_core == object_index){
+		//show_debug_message("found!");
+		ds_tmp = ds_map_create();
+		ds_map_add(ds_tmp,"objtype","obj_dungeon_core");
+	}
+	
+	if(ds_tmp !=noone){
+		ds_map_add(ds_tmp,"x",x);
+		ds_map_add(ds_tmp,"y",y);
+		ds_map_add_map(ds_objects,count,ds_tmp);
+		count++;
+	}
+}
 
+show_debug_message("count:"+string(count));
 
+t_objects = json_encode(ds_objects);
 
+//file_text_write_string(saveFile,ds_grid_write(t_objects));
+file_text_write_string(saveFile,t_objects);
+ds_map_destroy(ds_objects);
+file_text_writeln(saveFile);
 
 
 

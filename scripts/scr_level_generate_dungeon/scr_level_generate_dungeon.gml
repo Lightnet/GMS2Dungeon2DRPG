@@ -13,24 +13,56 @@ if(global.level_generate){
 	
 	show_debug_message("CREATE DUNGEON TEST!");
 	
-		if(instance_exists(obj_save_load)){
-			show_debug_message("Map Grid");
-			//show_debug_message(string( obj_save_load.grid_map[# 0,0]));
+	if(instance_exists(obj_dungeon_status)){
+		show_debug_message("Map Grid");
+		//show_debug_message(string( obj_save_load.grid_map[# 0,0]));
 			
-			for(var py = 0; py < 32; py++){
-				var col = "";
-				for(var px = 0; px < 32; px++){	
-					col += string(obj_save_load.grid_map[# px,py]);
-					if(obj_save_load.grid_map[# px,py] == 1){
-						var o_floor = instance_create_layer(px*32,py*32,"dungeonlayout",obj_floor);
-						show_debug_message("floor");
-					}else{
-						var o_wall = instance_create_layer(px*32,py*32,"dungeonlayout",obj_wall);
-					}
+		for(var py = 0; py < 32; py++){
+			//var col = "";
+			for(var px = 0; px < 32; px++){	
+				//col += string(obj_dungeon_status.grid_map[# px,py]);
+				if(obj_dungeon_status.grid_map[# px,py] == 1){
+					//var o_floor = instance_create_layer(px*32,py*32,"dungeonlayout",obj_floor);
+					//show_debug_message("floor");
+				}else{
+					//var o_wall = instance_create_layer(px*32,py*32,"dungeonlayout",obj_wall);
 				}
-				show_debug_message(col);
 			}
+			//show_debug_message(col);
 		}
+	}
+	var rm_objs = obj_dungeon_status.dungeonlayout;
+	var size = ds_map_size(rm_objs) ;
+	var key = ds_map_find_first(rm_objs);
+	var inobj = noone;
+	for (var i = 0; i < size; i++;)
+	{
+		var obj_data = rm_objs[? key];
+		//show_debug_message("x:"+string(obj_data[? "x"]));
+		show_debug_message("objtype:"+string(obj_data[? "objtype"]));
+		
+		if(obj_data[? "objtype"] == "obj_floor"){
+			instance_create_layer(obj_data[? "x"],obj_data[? "y"],"dungeonlayout",obj_floor);
+		}
+		
+		if(obj_data[? "objtype"] == "obj_wall"){
+			instance_create_layer(obj_data[? "x"],obj_data[? "y"],"dungeonlayout",obj_wall);
+		}
+		
+		if(obj_data[? "objtype"] == "obj_dungeon_core"){
+			instance_create_layer(obj_data[? "x"],obj_data[? "y"],"creatures", obj_dungeon_core);
+			//instance_create_layer(obj_data[? "x"],obj_data[? "y"],"creatures",obj_wall);
+			//show_debug_message("DUNGEON CORE!");
+		}
+		
+		if(inobj !=noone){
+			//inobj.x = obj_data[? "x"];
+			//inobj.y = obj_data[? "y"];
+		}
+		
+		
+		key = ds_map_find_next(rm_objs, key);
+	}
 	
 	/*
     // resize room

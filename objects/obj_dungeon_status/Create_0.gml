@@ -33,6 +33,12 @@ b_dp_regan = true;
 dp_regan = 0;
 dp_regan_time = room_speed;
 
+grid_map = ds_grid_create(32, 32);
+grid_path = ds_grid_create(32, 32);
+grid_traps = ds_grid_create(32, 32);
+
+dungeonlayout = noone;
+
 
 //creates the ds_map for each of the inventories of the dungeon
 global.dm_creatures = ds_map_create();
