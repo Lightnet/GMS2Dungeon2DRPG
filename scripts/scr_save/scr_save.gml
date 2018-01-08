@@ -28,6 +28,12 @@ if(instance_exists(obj_view)){
 	ds_map_add(ds_objview, "zoom", obj_view.zoom);
 	ds_map_add(ds_objview, "bfollowplayer", obj_view.bfollowplayer);
 	ds_map_add(ds_objview, "bcameracontrol", obj_view.bcameracontrol);
+	
+	ds_map_add(ds_objview, "view_xview", camera_get_view_x(view_camera[0]));
+	ds_map_add(ds_objview, "view_yview", camera_get_view_y(view_camera[0]));
+	
+	//view_xview = camera_get_view_x(view_camera[0]);
+	//view_yview = camera_get_view_y(view_camera[0]);
 }
 
 var saveobjview = json_encode(ds_objview);

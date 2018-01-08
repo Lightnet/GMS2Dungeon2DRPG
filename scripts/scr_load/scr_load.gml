@@ -12,7 +12,7 @@ if(file_exists("Save.sav")){
 	file_text_readln(LoadFile);
 	//file_text_close(LoadFile);
 	
-	show_debug_message("Room:"+string(LoadedRoom));
+	//show_debug_message("Room:"+string(LoadedRoom));
 	
 	//===============================================
 	//load Object View
@@ -22,11 +22,15 @@ if(file_exists("Save.sav")){
 	var objview_data = ds_map_create();
 	objview_data = json_decode(t_objview);
 	
-	show_debug_message(string(objview_data[? "x"]));
+	//show_debug_message(string(objview_data[? "x"]));
+	//show_debug_message(string(objview_data[? "bfollowplayer"]));
+	//show_debug_message(string(objview_data[? "bcameracontrol"]));
 	
-	show_debug_message(string(objview_data[? "bfollowplayer"]));
-	show_debug_message(string(objview_data[? "bcameracontrol"]));
+	if(instance_exists(obj_dungeon_status)){
+		obj_dungeon_status.ds_objview = objview_data;
+	}
 	
+	//ds_map_destroy(objview_data);
 	
 	//==============================================
 	// user data
@@ -45,7 +49,7 @@ if(file_exists("Save.sav")){
 	//show_debug_message(string(t_user));
 	//ds_map_read(user_data, t_user);
 	//show_debug_message(string(user_data[? "name"]));
-	show_debug_message(string(user_data[? "name"]));
+	//show_debug_message(string(user_data[? "name"]));
 	if(instance_exists(obj_dungeon_status)){
 		obj_dungeon_status.name = user_data[? "name"];
 		obj_dungeon_status.race = user_data[? "race"];

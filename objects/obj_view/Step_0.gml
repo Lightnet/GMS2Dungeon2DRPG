@@ -87,8 +87,8 @@ if(bcameracontrol){
 	
 		view_xview = camera_get_view_x(view_camera[0]);
 		view_yview = camera_get_view_y(view_camera[0]);
-		vpos_w = camera_get_view_width(view_camera[0]);
-		vpos_h = camera_get_view_height(view_camera[0]) ;
+		//vpos_w = camera_get_view_width(view_camera[0]);
+		//vpos_h = camera_get_view_height(view_camera[0]) ;
 		
         //draw view
         view_xview = drag_x - (mouse_x - view_xview);

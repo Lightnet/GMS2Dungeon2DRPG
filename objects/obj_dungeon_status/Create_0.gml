@@ -37,7 +37,8 @@ grid_map = ds_grid_create(32, 32);
 grid_path = ds_grid_create(32, 32);
 grid_traps = ds_grid_create(32, 32);
 
-dungeonlayout = noone;
+dungeonlayout = noone; //loading data file
+ds_objview = noone; //loading data file
 
 
 //creates the ds_map for each of the inventories of the dungeon

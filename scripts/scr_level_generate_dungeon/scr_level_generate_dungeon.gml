@@ -13,6 +13,26 @@ if(global.level_generate){
 	
 	show_debug_message("CREATE DUNGEON TEST!");
 	
+	
+	if(instance_exists(obj_dungeon_status)){
+		show_debug_message("obj_dungeon_status");
+		if(instance_exists(obj_view)){
+			show_debug_message("obj_view");
+			//show_debug_message("x:"+string(obj_dungeon_status.ds_objview[? "x"]))
+			
+			var xview = obj_dungeon_status.ds_objview[? "view_xview"];
+			var yview = obj_dungeon_status.ds_objview[? "view_yview"];
+			
+			camera_set_view_pos(view_camera[0], xview, yview);
+			
+			
+			//obj_view.x = obj_dungeon_status.ds_objview[? "x"];
+			//obj_view.y = obj_dungeon_status.ds_objview[? "y"];
+			
+			//camera_set_view_pos(view_camera[0], obj_dungeon_status.ds_objview[? "x"], obj_dungeon_status.ds_objview[? "y"]);
+		}
+	}
+	
 	if(instance_exists(obj_dungeon_status)){
 		show_debug_message("Map Grid");
 		//show_debug_message(string( obj_save_load.grid_map[# 0,0]));
@@ -39,7 +59,7 @@ if(global.level_generate){
 	{
 		var obj_data = rm_objs[? key];
 		//show_debug_message("x:"+string(obj_data[? "x"]));
-		show_debug_message("objtype:"+string(obj_data[? "objtype"]));
+		//show_debug_message("objtype:"+string(obj_data[? "objtype"]));
 		
 		if(obj_data[? "objtype"] == "obj_floor"){
 			instance_create_layer(obj_data[? "x"],obj_data[? "y"],"dungeonlayout",obj_floor);
